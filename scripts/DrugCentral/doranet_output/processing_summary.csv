@@ -1,0 +1,13 @@
+starter_idx,starter_smiles,status,num_molecules,num_targets,time_seconds,error
+5,S=P(N1CC1)(N1CC1)N1CC1,success,42,26,15.56,
+7,CC1=CC(=NN2C1=NC(=C2)C)C3=CC(=O)N4C=C(C=CC4=N3)N5CCNC6(C5)CC6,success,42,27,20.21,
+14,FC1=C(C=CC(=C1)C#N)[C@H]1CCC2=CN=CN12,success,825,808,395.39,
+23,NC1=NC(=O)N(C=C1)[C@@H]1CS[C@H](CO)O1,success,343,324,354.2,
+26,NC1=C2CN(C3CCC(=O)NC3=O)C(=O)C2=CC=C1,success,967,949,482.22,
+28,CN1C(=O)NN=C1CN1C=CC(=C(OC2=CC(=CC(Cl)=C2)C#N)C1=O)C(F)(F)F,success,1750,1732,1149.76,
+33,C[C@H]1OC2=C(N)N=CC(=C2)C2=C(C#N)N(C)N=C2CN(C)C(=O)C2=CC=C(F)C=C12,success,948,931,593.14,
+38,NC1=NC(=O)N(C=N1)[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O,success,926,907,483.76,
+47,OC[C@H]1NC[C@H](O)[C@@H](O)[C@H]1O,success,1313,1293,519.83,
+56,NC1=NC(=O)N(C=C1F)[C@@H]1CS[C@H](CO)O1,success,319,300,334.1,
+58,O=C1N(C[C@H]2CCCC3=CC=CC1=C23)[C@@H]1CN2CCC1CC2,success,892,875,474.39,
+68,CC1=CN(C(=O)C=C1)C1=CC=CC=C1,success,633,616,409.52,

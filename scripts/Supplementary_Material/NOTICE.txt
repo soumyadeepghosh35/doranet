@@ -1,0 +1,6 @@
+Third-party material included in this package:
+
+• Rhea_random_1000.json is derived from the Rhea biochemical reaction
+  knowledgebase © SIB Swiss-Prot Group and is redistributed under the
+  Creative Commons Attribution 4.0 International licence.
+  Source: https://www.rhea-db.org/

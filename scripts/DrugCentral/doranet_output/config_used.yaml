@@ -1,0 +1,18 @@
+input:
+  SMILESfile: ApprovedDrugCentral_SMILES.csv
+  smiles_column: Canonical_SMILES
+  start_index: 0
+  num_smiles: null
+output:
+  directory: doranet_output
+parallel:
+  num_workers: 64
+network:
+  generations: 2
+  ruleset: JN3604IMT
+  direction: forward
+max_atoms:
+  C: 215
+  N: 61
+  O: 65
+  S: 2

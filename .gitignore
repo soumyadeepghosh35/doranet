@@ -579,3 +579,13 @@ FodyWeavers.xsd
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,jupyternotebooks,visualstudio
 
 docs/source/_autosummary
+
+
+**/starter_*/
+
+# Large files (>100MB) - keep local
+scripts/Inosine_Pubchem/InosineSimilarstructures/doranet_output/InosineSimilarstructuresDORAnetGeneratedMolecules.csv
+scripts/Inosine_Pubchem/InosineSimilarstructures/doranet_output/InosineSimilarstructures_DORAnetGeneratedMolecules.csv
+scripts/natural_products_data/coconut_np_data.zip
+scripts/natural_products_data/naturalProductDF.csv
+scripts/natural_products_data/naturalProductDF2.csv
