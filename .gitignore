@@ -589,3 +589,10 @@ scripts/Inosine_Pubchem/InosineSimilarstructures/doranet_output/InosineSimilarst
 scripts/natural_products_data/coconut_np_data.zip
 scripts/natural_products_data/naturalProductDF.csv
 scripts/natural_products_data/naturalProductDF2.csv
+
+# DORAnet generated networks / outputs (often large)
+scripts/**/__forward_saved_network.pgnet
+scripts/**/*.pgnet
+
+# Large parquet datasets under natural_products_data
+scripts/natural_products_data/*.parquet
