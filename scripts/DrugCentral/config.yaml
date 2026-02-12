@@ -8,7 +8,7 @@
 # -----------------------------------------------------------------------------
 input:
   # Path to CSV file containing starter SMILES molecules
-  SMILESfile: "ApprovedDrugCentral_SMILES.csv"
+  SMILESfile: "ApprovedDrugCentral_SMILES_short.csv"
   
   # Column name in CSV file that contains SMILES strings
   smiles_column: "Canonical_SMILES"
@@ -31,7 +31,7 @@ output:
 parallel:
   # Number of parallel workers (CPU cores) to use
   # Will be capped at available CPU cores if set higher
-  num_workers: 64
+  num_workers: 32
 
 # Network Generation Settings
 # -----------------------------------------------------------------------------
@@ -51,7 +51,7 @@ network:
 # Limits the size of generated molecules
 # Molecules exceeding these limits will be excluded
 max_atoms:
-  C: 215 # Carbon
-  N: 61  # Nitrogen
-  O: 65  # Oxygen
-  S: 2   # Sulfur
+  C: 36   # Carbon (max in data: 24)
+  N: 12   # Nitrogen (max in data: 8)
+  O: 11   # Oxygen (max in data: 7)
+  S: 3   # Sulfur (max in data: 2)

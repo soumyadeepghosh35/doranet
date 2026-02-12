@@ -1,1 +1,1 @@
-python parallel_doranet.py -c config.yaml
+python parallel_doranet.py -c config.yaml > doranet.out

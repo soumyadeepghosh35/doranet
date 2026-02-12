@@ -1,0 +1,6 @@
+starter_idx,starter_smiles,status,num_molecules,num_targets,time_seconds,error
+0,Cc1ncc(COP(=O)(O)O)c(C=O)c1O,success,2097,2077,1013.77,
+7,C[N+](C)(C)CCO,success,1713,1692,642.16,
+10,O=C1O[C@H]([C@@H](O)CO)C(O)=C1O,success,41,25,50.72,
+15,Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](O)[C@H]1O,success,41,25,82.07,
+27,Cc1ncc(CO)c(C=O)c1O,success,1460,1440,587.4,

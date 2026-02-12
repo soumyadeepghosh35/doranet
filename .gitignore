@@ -589,6 +589,8 @@ scripts/Inosine_Pubchem/InosineSimilarstructures/doranet_output/InosineSimilarst
 scripts/natural_products_data/coconut_np_data.zip
 scripts/natural_products_data/naturalProductDF.csv
 scripts/natural_products_data/naturalProductDF2.csv
+scripts/DrugBank/drugbank_all_full_database.xml.zip
+scripts/DrugBank/full_DrugBank_database.xml
 
 # DORAnet generated networks / outputs (often large)
 scripts/**/__forward_saved_network.pgnet
