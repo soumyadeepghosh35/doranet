@@ -591,6 +591,7 @@ scripts/natural_products_data/naturalProductDF.csv
 scripts/natural_products_data/naturalProductDF2.csv
 scripts/DrugBank/drugbank_all_full_database.xml.zip
 scripts/DrugBank/full_DrugBank_database.xml
+scripts/DrugBank/doranet_output/drugBank_DORAnetGeneratedMolecules.csv
 
 # DORAnet generated networks / outputs (often large)
 scripts/**/__forward_saved_network.pgnet
@@ -598,3 +599,5 @@ scripts/**/*.pgnet
 
 # Large parquet datasets under natural_products_data
 scripts/natural_products_data/*.parquet
+*.gif
+

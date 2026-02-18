@@ -1,0 +1,214 @@
+Loading configuration from: config.yaml
+======================================================================
+CONFIGURATION
+======================================================================
+Input file: generated_molecules_diverseStarterSecondExtensionSMILES.csv
+SMILES column: Canonical_SMILES
+Start index: 0
+Number to process: all
+Output directory: doranet_output
+Workers: 64
+Generations: 3
+Ruleset: JN3604IMT
+Direction: forward
+Max atoms: {'C': 12, 'N': 3, 'O': 5, 'S': 3}
+======================================================================
+Configuration saved to: doranet_output/config_used.yaml
+
+Reading SMILES from CSV...
+Loaded 2054 SMILES
+
+Starting parallel processing
+  Total SMILES: 2054
+  Workers: 64
+  No timeout limits — each molecule runs until completion
+----------------------------------------------------------------------
+[Worker 13] Starting [13/2054] SMILES: CCC=C1OC(=O)[C@@H](CCCCc2c[nH]c(Cl)c2Cl)[C@H]1O...
+Job name: starter_00012
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-02-18 10:18:14.150535
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 42
+Number of reactions: 0
+Time used for network generation: 0.36 minutes
+
+Job name: starter_00012
+Job type: post-processing pretreat networks
+Job started on: 2026-02-18 10:18:39.422488
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 0
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 0
+Time used for network pretreatment: 0.00 minutes
+
+Job name: starter_00012
+Job type: pathway search
+Job started on: 2026-02-18 10:18:39.426052
+Pathway finder started, total number of reactions in network 0
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+No pathway found! Try adjusting pruning parameters.
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.00 minutes
+
+Job name: starter_00012
+Job type: pathway ranking
+Job started on: 2026-02-18 10:18:39.427844
+Pathway file not found, exiting pathway ranking
+
+Job name: starter_00012
+Job type: pathway visualization
+Job started on: 2026-02-18 10:18:39.429994
+Ranked pathway file not found, exiting pathway visualization
+
+[Worker 13] Finished [13/2054] SUCCESS | Molecules: 42 | Targets: 26 | Time: 25.4s | SMILES: CCC=C1OC(=O)[C@@H](CCCCc2c[nH]c(Cl)c2Cl)...
+[Worker 13] Starting [76/2054] SMILES: CCC=C1OC(=O)[C@H](CCCCCC)[C@H]1O...
+Job name: starter_00075
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-02-18 10:18:40.184244
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 42
+Number of reactions: 0
+Time used for network generation: 0.32 minutes
+
+Job name: starter_00075
+Job type: post-processing pretreat networks
+Job started on: 2026-02-18 10:19:02.805060
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 0
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 0
+Time used for network pretreatment: 0.00 minutes
+
+Job name: starter_00075
+Job type: pathway search
+Job started on: 2026-02-18 10:19:02.808150
+Pathway finder started, total number of reactions in network 0
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+No pathway found! Try adjusting pruning parameters.
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.00 minutes
+
+Job name: starter_00075
+Job type: pathway ranking
+Job started on: 2026-02-18 10:19:02.809723
+Pathway file not found, exiting pathway ranking
+
+Job name: starter_00075
+Job type: pathway visualization
+Job started on: 2026-02-18 10:19:02.811983
+Ranked pathway file not found, exiting pathway visualization
+
+[Worker 13] Finished [76/2054] SUCCESS | Molecules: 42 | Targets: 26 | Time: 22.7s | SMILES: CCC=C1OC(=O)[C@H](CCCCCC)[C@H]1O...
+[Worker 13] Starting [81/2054] SMILES: CC=C1OC(=O)[C@H](O)C1=O...
+Job name: starter_00080
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-02-18 10:19:03.567142
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 3494
+Number of reactions: 6806
+Time used for network generation: 115.60 minutes
+
+Job name: starter_00080
+Job type: post-processing pretreat networks
+Job started on: 2026-02-18 12:14:43.878189
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 6806
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 6733
+Time used for network pretreatment: 0.00 minutes
+
+Job name: starter_00080
+Job type: pathway search
+Job started on: 2026-02-18 12:14:44.162421
+Pathway finder started, total number of reactions in network 6733
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.02 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: starter_00080
+Job type: pathway ranking
+Job started on: 2026-02-18 12:14:45.246331
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.8204049487084907
+Max_eco 0.8204049487084907
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.8204049487084907
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C(O)C(=O)[C@@H](O)C(=O)O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1>>CC=C(O)C(=O)[C@@H](O)CO.NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O
+CC=C(O)C(=O)[C@@H](O)CO.Cl>>CC=C(O)C(=O)[C@@H](O)CCl.O
+CC=C1OC(=O)[C@H](O)C1=O.O>>CC=C(O)C(=O)[C@@H](O)C(=O)O
+rule0164_2
+rule0183_6
+rule0035_7
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.00 minutes
+
+Job name: starter_00080
+Job type: pathway visualization
+Job started on: 2026-02-18 12:14:45.324018
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
