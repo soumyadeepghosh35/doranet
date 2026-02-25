@@ -12090,3 +12090,2420 @@ Number of reactions in reaxys:  0
 Working on creating pages
 You can adjust multi-processing number to speed up PDF generation
 page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.02 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[Worker 6] Finished [6/2054] SUCCESS | Molecules: 10584 | Targets: 10561 | Time: 21.29h | SMILES: CCC=C1OC(=O)[C@H](OC)[C@H]1O...
+[Worker 6] Starting [105/2054] SMILES: CC=C1C[C@H](CCCCc2c[nH]c(Cl)c2Cl)C(=O)O1...
+Job name: starter_00104
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-02-19 07:35:32.485317
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 42
+Number of reactions: 0
+Time used for network generation: 0.56 minutes
+
+Job name: starter_00104
+Job type: post-processing pretreat networks
+Job started on: 2026-02-19 07:36:10.956327
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 0
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 0
+Time used for network pretreatment: 0.00 minutes
+
+Job name: starter_00104
+Job type: pathway search
+Job started on: 2026-02-19 07:36:10.960370
+Pathway finder started, total number of reactions in network 0
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+No pathway found! Try adjusting pruning parameters.
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.00 minutes
+
+Job name: starter_00104
+Job type: pathway ranking
+Job started on: 2026-02-19 07:36:10.962701
+Pathway file not found, exiting pathway ranking
+
+Job name: starter_00104
+Job type: pathway visualization
+Job started on: 2026-02-19 07:36:10.965964
+Ranked pathway file not found, exiting pathway visualization
+
+[Worker 6] Finished [105/2054] SUCCESS | Molecules: 42 | Targets: 26 | Time: 38.6s | SMILES: CC=C1C[C@H](CCCCc2c[nH]c(Cl)c2Cl)C(=O)O1...
+[Worker 6] Starting [106/2054] SMILES: CC=C1OC(=O)[C@@H](CCCCCC)[C@@H]1O...
+Job name: starter_00105
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-02-19 07:36:11.782146
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 26609
+Number of reactions: 98205
+Time used for network generation: 6266.59 minutes
+
+Job name: starter_00105
+Job type: post-processing pretreat networks
+Job started on: 2026-02-23 16:03:00.358302
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 98205
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 96490
+Time used for network pretreatment: 0.10 minutes
+
+Job name: starter_00105
+Job type: pathway search
+Job started on: 2026-02-23 16:03:06.325364
+Pathway finder started, total number of reactions in network 96490
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.36 minutes
+2 pathways found!
+5 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: starter_00105
+Job type: pathway ranking
+Job started on: 2026-02-23 16:03:27.700386
+Start ranking pathways. Number of pathways after sanitization: 2
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 1
+Max_eco 1.0
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@@H]1O.O>>CC=C1OC(O)[C@@H](CC(O)CCCC)[C@@H]1O
+CC=C1OC(O)[C@@H](CC(C)O)[C@]1(O)CCC>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CC(O)CCCC)[C@@H]1O>>CC=C1OC(O)[C@@H](CC(C)O)[C@]1(O)CCC
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCC)[C@]1(O)CCC.O>>CC=C1OC(O)[C@@H](CC(C)O)[C@]1(O)CCC
+CC=C1OC(=O)[C@@H](CCCCCC)[C@@H]1O>>CC=C1OC(=O)[C@@H](CCC)[C@]1(O)CCC
+CC=C1OC(O)[C@@H](CC(C)O)[C@]1(O)CCC>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.00 minutes
+
+Job name: starter_00105
+Job type: pathway visualization
+Job started on: 2026-02-23 16:03:27.822563
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  2
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.04 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[Worker 54] Finished [140/2054] SUCCESS | Molecules: 3656 | Targets: 3633 | Time: 3.10h | SMILES: CC=C1OC(=O)C(O)C1=O...
+[Worker 54] Starting [141/2054] SMILES: CC=C1CCC(=O)O1...
+Job name: starter_00140
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-02-21 20:37:00.578400
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 11093
+Number of reactions: 19325
+Time used for network generation: 2667.87 minutes
+
+Job name: starter_00140
+Job type: post-processing pretreat networks
+Job started on: 2026-02-23 17:05:02.813290
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 19325
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 19214
+Time used for network pretreatment: 0.02 minutes
+
+Job name: starter_00140
+Job type: pathway search
+Job started on: 2026-02-23 17:05:04.070255
+Pathway finder started, total number of reactions in network 19214
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.08 minutes
+2 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: starter_00140
+Job type: pathway ranking
+Job started on: 2026-02-23 17:05:08.632924
+Start ranking pathways. Number of pathways after sanitization: 2
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 1
+Max_eco 1.0
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C(O)CCC(=O)O>>CCC(O)=CCC(=O)O
+CC=C1CCC(=O)O1.O>>CC=C(O)CCC(=O)O
+CCC(O)=CCC(=O)O.O=O>>CC=C(O)C(CC(=O)O)OO
+rule0040_7
+rule0035_7
+rule0131_1
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C(O)CCC(=O)O>>CCC(O)=CCC(=O)O
+CC=C1CCC(=O)O1.O>>CC=C(O)CCC(=O)O
+CCC(O)=CCC(=O)O.O=O>>CC=C(O)C(CC(=O)O)OO
+rule0028_50
+rule0035_7
+rule0131_1
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.00 minutes
+
+Job name: starter_00140
+Job type: pathway visualization
+Job started on: 2026-02-23 17:05:08.720452
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  2
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.02 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[Worker 6] Finished [106/2054] SUCCESS | Molecules: 26609 | Targets: 26585 | Time: 104.45h | SMILES: CC=C1OC(=O)[C@@H](CCCCCC)[C@@H]1O...
+[Worker 6] Starting [158/2054] SMILES: CC=C1C=C(O)C(=O)O1...
+Job name: starter_00157
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-02-23 16:03:30.319492
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 5213
+Number of reactions: 10479
+Time used for network generation: 256.37 minutes
+
+Job name: starter_00157
+Job type: post-processing pretreat networks
+Job started on: 2026-02-23 20:19:57.321395
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 10479
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 10344
+Time used for network pretreatment: 0.01 minutes
+
+Job name: starter_00157
+Job type: pathway search
+Job started on: 2026-02-23 20:19:57.724599
+Pathway finder started, total number of reactions in network 10344
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.03 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: starter_00157
+Job type: pathway ranking
+Job started on: 2026-02-23 20:19:59.418508
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 1
+Max_eco 1.0
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+C#N.O=C(O)C=C1C=C(O)C(O)O1>>N#CC(O)(O)C=C1C=C(O)C(O)O1
+CC=C1C=C(O)C(=O)O1.O>>OCC=C1C=C(O)C(O)O1
+NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.OCC=C1C=C(O)C(O)O1>>NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=C(O)C=C1C=C(O)C(O)O1
+rule0393_9
+rule0070_6
+rule0165_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.00 minutes
+
+Job name: starter_00157
+Job type: pathway visualization
+Job started on: 2026-02-23 20:19:59.487826
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.01 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[Worker 6] Finished [158/2054] SUCCESS | Molecules: 5213 | Targets: 5190 | Time: 4.27h | SMILES: CC=C1C=C(O)C(=O)O1...
+[Worker 6] Starting [160/2054] SMILES: O=C1OC(=CCO)C(=O)[C@H]1O...
+Job name: starter_00159
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-02-23 20:20:01.097736
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 764
+Number of reactions: 1399
+Time used for network generation: 21.29 minutes
+
+Job name: starter_00159
+Job type: post-processing pretreat networks
+Job started on: 2026-02-23 20:41:23.893862
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 1399
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 1374
+Time used for network pretreatment: 0.00 minutes
+
+Job name: starter_00159
+Job type: pathway search
+Job started on: 2026-02-23 20:41:24.018610
+Pathway finder started, total number of reactions in network 1374
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.01 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: starter_00159
+Job type: pathway ranking
+Job started on: 2026-02-23 20:41:24.405725
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.829517839703845
+Max_eco 0.829517839703845
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.829517839703845
+pathway by-product 0
+intermediate by-product {None: 0}
+C=C(O)C(=O)[C@@H](O)C(=O)O>>C=C(O)C1(O)OC(=O)[C@@H]1O
+C=C1OC(=O)[C@H](O)C1=O.O>>C=C(O)C(=O)[C@@H](O)C(=O)O
+O=C1OC(=CCO)C(=O)[C@H]1O>>C=C1OC(=O)[C@H](O)C1=O.C=O
+rule0063_1
+rule0035_7
+rule0053_20
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.00 minutes
+
+Job name: starter_00159
+Job type: pathway visualization
+Job started on: 2026-02-23 20:41:24.485433
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.01 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[Worker 6] Finished [160/2054] SUCCESS | Molecules: 764 | Targets: 742 | Time: 21.4m | SMILES: O=C1OC(=CCO)C(=O)[C@H]1O...
+[Worker 6] Starting [161/2054] SMILES: O=C1CC(=O)C(=CCO)O1...
+Job name: starter_00160
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-02-23 20:41:26.130410
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4239
+Number of reactions: 8905
+Time used for network generation: 219.60 minutes
+
+Job name: starter_00160
+Job type: post-processing pretreat networks
+Job started on: 2026-02-24 00:21:06.586190
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8905
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8823
+Time used for network pretreatment: 0.01 minutes
+
+Job name: starter_00160
+Job type: pathway search
+Job started on: 2026-02-24 00:21:06.926017
+Pathway finder started, total number of reactions in network 8823
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.02 minutes
+2 pathways found!
+5 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: starter_00160
+Job type: pathway ranking
+Job started on: 2026-02-24 00:21:08.358892
+Start ranking pathways. Number of pathways after sanitization: 2
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.6267139141352747
+Max_eco 0.6267139141352747
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6267139141352747
+pathway by-product 0
+intermediate by-product {None: 0}
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=C1CC(=O)C(C(CO)CO)O1>>COCC(CO)C1OC(=O)CC1=O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=C1CC(=O)C(=C(CO)CO)O1>>NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O=C1CC(=O)C(C(CO)CO)O1
+O=C1CC(=O)C(=CCO)O1.O=C1CC(=O)C(=CCO)O1>>C=C1OC(=O)CC1=O.O=C1CC(=O)C(=C(CO)CO)O1
+rule0011_50
+rule0027_63
+rule0126_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6267139141352747
+pathway by-product 0
+intermediate by-product {None: 0}
+COCC(CO)=C1OC(=O)CC1=O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1>>COCC(CO)C1OC(=O)CC1=O.NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=C1CC(=O)C(=C(CO)CO)O1>>COCC(CO)=C1OC(=O)CC1=O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+O=C1CC(=O)C(=CCO)O1.O=C1CC(=O)C(=CCO)O1>>C=C1OC(=O)CC1=O.O=C1CC(=O)C(=C(CO)CO)O1
+rule0027_63
+rule0011_50
+rule0126_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.00 minutes
+
+Job name: starter_00160
+Job type: pathway visualization
+Job started on: 2026-02-24 00:21:08.401239
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  2
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.02 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[Worker 54] Finished [141/2054] SUCCESS | Molecules: 11093 | Targets: 11069 | Time: 44.47h | SMILES: CC=C1CCC(=O)O1...
+[Worker 54] Starting [159/2054] SMILES: C[C@@H]1C(=O)OC(=CCO)[C@@H]1O...
+Job name: starter_00158
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-02-23 17:05:10.943349
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 7629
+Number of reactions: 16466
+Time used for network generation: 933.17 minutes
+
+Job name: starter_00158
+Job type: post-processing pretreat networks
+Job started on: 2026-02-24 08:38:29.384146
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 16466
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 16306
+Time used for network pretreatment: 0.02 minutes
+
+Job name: starter_00158
+Job type: pathway search
+Job started on: 2026-02-24 08:38:30.480743
+Pathway finder started, total number of reactions in network 16306
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.07 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: starter_00158
+Job type: pathway ranking
+Job started on: 2026-02-24 08:38:34.723885
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.9152749624933569
+Max_eco 0.9152749624933569
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.9152749624933569
+pathway by-product 0
+intermediate by-product {None: 0}
+C[C@@H]1C(=O)OC(=CCO)[C@@H]1O.O>>C[C@H](C(=O)O)[C@@H](O)C(O)=CCO
+C[C@H](C(=O)O)[C@@H](Cl)C(O)=CCO>>C[C@H](C(O)O)[C@@]1(Cl)OC1=CCO
+C[C@H](C(=O)O)[C@@H](O)C(O)=CCO.Cl>>C[C@H](C(=O)O)[C@@H](Cl)C(O)=CCO.O
+rule0035_7
+rule0169_1
+rule0183_6
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.00 minutes
+
+Job name: starter_00158
+Job type: pathway visualization
+Job started on: 2026-02-24 08:38:34.816266
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.02 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[Worker 11] Finished [112/2054] SUCCESS | Molecules: 5358 | Targets: 5335 | Time: 5.09h | SMILES: CC=C1C=C(OC)C(=O)O1...
+[Worker 11] Starting [114/2054] SMILES: CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O...
+Job name: starter_00113
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-02-19 21:36:04.563799
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 26608
+Number of reactions: 98205
+Time used for network generation: 7432.72 minutes
+
+Job name: starter_00113
+Job type: post-processing pretreat networks
+Job started on: 2026-02-25 01:29:01.362441
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 98205
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 96490
+Time used for network pretreatment: 0.10 minutes
+
+Job name: starter_00113
+Job type: pathway search
+Job started on: 2026-02-25 01:29:07.352234
+Pathway finder started, total number of reactions in network 96490
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.36 minutes
+58 pathways found!
+90 reactions found in all pathways
+Min number of reactions in a pathway: 2
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: starter_00113
+Job type: pathway ranking
+Job started on: 2026-02-25 01:29:28.888945
+Start ranking pathways. Number of pathways after sanitization: 58
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 1
+Max_eco 1.0
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 2.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_50
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O
+CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+No_Thermo
+No_Thermo
+
+ranking 3
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+rule0070_6
+rule0028_51
+No_Thermo
+No_Thermo
+
+ranking 4
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CCCC[C@@H]1C(=O)OC(=C(C)CC)[C@@H]1O
+CCCC[C@@H]1C(=O)OC(=C(C)CC)[C@@H]1O.O>>CCCC[C@@H]1C(O)OC(=C(C)C(C)O)[C@@H]1O
+CCCC[C@@H]1C(O)OC(=C(C)C(C)O)[C@@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0028_51
+rule0070_6
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 5
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CCCCC=C1OC(=O)[C@@H](CCC)[C@H]1O
+CCCCC=C1OC(=O)[C@@H](CCC)[C@H]1O.O>>CCCCC=C1OC(O)[C@@H](CC(C)O)[C@H]1O
+CCCCC=C1OC(O)[C@@H](CC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0028_51
+rule0070_6
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 6
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CCCC=C1OC(=O)[C@@H](CCCC)[C@H]1O
+CCCC=C1OC(=O)[C@@H](CCCC)[C@H]1O.O>>CCCC[C@@H]1C(O)OC(=CCC(C)O)[C@@H]1O
+CCCC[C@@H]1C(O)OC(=CCC(C)O)[C@@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0028_51
+rule0070_6
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 7
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CCCC(C)=C1OC(=O)[C@@H](CCC)[C@H]1O
+CCCC(C)=C1OC(=O)[C@@H](CCC)[C@H]1O.O>>CCCC(C)=C1OC(O)[C@@H](CC(C)O)[C@H]1O
+CCCC(C)=C1OC(O)[C@@H](CC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0028_51
+rule0070_6
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 8
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@](CC)(CCCC)[C@H]1O
+CC=C1OC(=O)[C@](CC)(CCCC)[C@H]1O.O>>CC=C1OC(O)[C@@](CCCC)(C(C)O)[C@H]1O
+CC=C1OC(O)[C@@](CCCC)(C(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0028_51
+rule0070_6
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 9
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCCCO)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCCCO)[C@H]1O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+rule0070_6
+rule0028_50
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 10
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCCCO)[C@H]1O
+CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCCCO)[C@H]1O>>CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 11
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCCCO)[C@H]1O
+CC=C1OC(O)[C@@H](C(CO)CCCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCCCO)[C@H]1O>>CC=C1OC(O)[C@@H](C(CO)CCCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 12
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCCCO)[C@H]1O
+CC=C1OC(O)[C@@H](C(CCC)CCO)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCCCO)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)CCO)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 13
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CC=C1OC(O)[C@@](CCC)(CC(C)O)[C@H]1O
+CC=C1OC(O)[C@@](CCC)(CC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 14
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CCCC[C@@H]1C(O)OC(=CCC(C)O)[C@@H]1O
+CCCC[C@@H]1C(O)OC(=CCC(C)O)[C@@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_50
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 15
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CCCC[C@@H]1C(O)OC(=C(C)C(C)O)[C@@H]1O
+CCCC[C@@H]1C(O)OC(=C(C)C(C)O)[C@@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_50
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 16
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CC=C1OC(O)[C@@](CCCC)(C(C)O)[C@H]1O
+CC=C1OC(O)[C@@](CCCC)(C(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_50
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 17
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCC)[C@@]1(O)C(C)O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](CCCC)[C@@]1(O)C(C)O
+rule0070_6
+rule0028_50
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 18
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCC(C)C(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](CCC(C)C(C)O)[C@H]1O
+rule0070_6
+rule0028_50
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 19
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCC(C)C(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](CCC(C)C(C)O)[C@H]1O
+rule0070_6
+rule0028_50
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 20
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CC(CC)C(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](CC(CC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_50
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 21
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CC(CC)C(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](CC(CC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_50
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 22
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CC(C)(O)CCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](CC(C)(O)CCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 23
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)(C(C)O)[C@@H](CCCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CC=C1OC(O)(C(C)O)[C@@H](CCCC)[C@H]1O
+rule0070_6
+rule0028_50
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 24
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCC(O)CC)[C@H]1O
+CC=C1OC(O)[C@@H](CCCC(O)CC)[C@H]1O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 25
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCC(O)CC)[C@H]1O
+CC=C1OC(O)[C@@H](CCC(C)C(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCC(O)CC)[C@H]1O>>CC=C1OC(O)[C@@H](CCC(C)C(C)O)[C@H]1O
+rule0070_6
+rule0028_50
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 26
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCCC(O)CC)[C@H]1O
+CC=C1OC(O)[C@@H](C(CC)C(O)CC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCC(O)CC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CC)C(O)CC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 27
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCC(O)CCC)[C@H]1O
+CC=C1OC(O)[C@@H](CCC(O)CCC)[C@H]1O>>CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCCCC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 28
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCC(O)CCC)[C@H]1O
+CC=C1OC(O)[C@@H](CC(CC)C(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCC(O)CCC)[C@H]1O>>CC=C1OC(O)[C@@H](CC(CC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_50
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 29
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCC(O)CCC)[C@H]1O
+CC=C1OC(O)[C@@H](CC(C)(O)CCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCC(O)CCC)[C@H]1O>>CC=C1OC(O)[C@@H](CC(C)(O)CCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 30
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCC(O)CCC)[C@H]1O
+CC=C1OC(O)[C@@H](C(CCC)CCO)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCC(O)CCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)CCO)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 31
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCC(O)CCC)[C@H]1O
+CC=C1OC(O)[C@@H](C(C)C(O)CCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CCC(O)CCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(C)C(O)CCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 32
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O
+CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O>>CCCCC=C1OC(O)[C@@H](CC(C)O)[C@H]1O
+CCCCC=C1OC(O)[C@@H](CC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 33
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O
+CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O>>CCCC(C)=C1OC(O)[C@@H](CC(C)O)[C@H]1O
+CCCC(C)=C1OC(O)[C@@H](CC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 34
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O
+CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O>>CC=C1OC(O)[C@](CCC)(CC(C)O)[C@H]1O
+CC=C1OC(O)[C@](CCC)(CC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 35
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O
+CC=C1OC(O)[C@@H](CC(C)(O)CCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O>>CC=C1OC(O)[C@@H](CC(C)(O)CCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 36
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O
+CC=C1OC(O)[C@@H](C(CO)CCCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CO)CCCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 37
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O
+CC=C1OC(O)[C@@H](C(CC)C(O)CC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CC)C(O)CC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 38
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O
+CC=C1OC(O)[C@@H](C(C)C(O)CCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(C)C(O)CCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 39
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O
+CC=C1OC(O)(CCC)[C@@H](CC(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(O)[C@@H](CC(O)CCCC)[C@H]1O>>CC=C1OC(O)(CCC)[C@@H](CC(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 40
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCCC)[C@@]1(O)CC.O>>CC=C1OC(O)[C@@H](CCCC)[C@@]1(O)C(C)O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](CCCC)[C@@]1(O)CC
+CC=C1OC(O)[C@@H](CCCC)[C@@]1(O)C(C)O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 41
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CCC(C)CC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CCC(C)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](CCC(C)CC)[C@H]1O
+CC=C1OC(O)[C@@H](CCC(C)C(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 42
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CC(CC)CC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CC(CC)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](CC(CC)CC)[C@H]1O
+CC=C1OC(O)[C@@H](CC(CC)C(C)O)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 43
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](CC(C)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](CC(C)(O)CCC)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](CC(C)CCC)[C@H]1O
+CC=C1OC(O)[C@@H](CC(C)(O)CCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 44
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CCC)CCO)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+CC=C1OC(O)[C@@H](C(CCC)CCO)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 45
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CCCC[C@@H]1C(=O)OC(=C(C)CC)[C@@H]1O
+CCCC[C@@H]1C(=O)OC(=C(C)CC)[C@@H]1O>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 46
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CCCCC=C1OC(=O)[C@@H](CCC)[C@H]1O
+CCCCC=C1OC(=O)[C@@H](CCC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 47
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CCCC=C1OC(=O)[C@@H](CCCC)[C@H]1O
+CCCC=C1OC(=O)[C@@H](CCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 48
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CCCC(C)=C1OC(=O)[C@@H](CCC)[C@H]1O
+CCCC(C)=C1OC(=O)[C@@H](CCC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 49
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@](CC)(CCCC)[C@H]1O
+CC=C1OC(=O)[C@](CC)(CCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 50
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCC)[C@@]1(O)CC>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](CCCC)[C@@]1(O)CC
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 51
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CCC)[C@@]1(O)CCC>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](CCC)[C@@]1(O)CCC
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 52
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CCC(C)CC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](CCC(C)CC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 53
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CC(CC)CC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](CC(CC)CC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 54
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CC(C)CCC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](CC(C)CCC)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 55
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CC)C(O)CC)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+CC=C1OC(O)[C@@H](C(CC)C(O)CC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 56
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(C)CCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O
+CC=C1OC(=O)[C@@H](C(CC)CCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(C)CCCC)[C@H]1O
+rule0028_51
+rule0070_6
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 57
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(C)CCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(CO)CCCC)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(C)CCCC)[C@H]1O
+CC=C1OC(O)[C@@H](C(CO)CCCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 58
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC=C1OC(=O)[C@@H](C(C)CCCC)[C@H]1O.O>>CC=C1OC(O)[C@@H](C(C)C(O)CCC)[C@H]1O
+CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O>>CC=C1OC(=O)[C@@H](C(C)CCCC)[C@H]1O
+CC=C1OC(O)[C@@H](C(C)C(O)CCC)[C@H]1O>>CC=C1OC(O)[C@@H](C(CCC)C(C)O)[C@H]1O
+rule0070_6
+rule0028_51
+rule0028_51
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.01 minutes
+
+Job name: starter_00113
+Job type: pathway visualization
+Job started on: 2026-02-25 01:29:29.388396
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  58
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+page done: 3
+page done: 4
+page done: 5
+page done: 6
+page done: 7
+page done: 8
+page done: 9
+page done: 10
+page done: 11
+page done: 12
+page done: 13
+page done: 14
+page done: 15
+page done: 16
+page done: 17
+page done: 18
+page done: 19
+page done: 20
+page done: 21
+page done: 22
+page done: 23
+page done: 24
+page done: 25
+page done: 26
+page done: 27
+page done: 28
+page done: 29
+page done: 30
+page done: 31
+page done: 32
+page done: 33
+page done: 34
+page done: 35
+page done: 36
+page done: 37
+page done: 38
+page done: 39
+page done: 40
+page done: 41
+page done: 42
+page done: 43
+page done: 44
+page done: 45
+page done: 46
+page done: 47
+page done: 48
+page done: 49
+page done: 50
+page done: 51
+page done: 52
+page done: 53
+page done: 54
+page done: 55
+page done: 56
+page done: 57
+page done: 58
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.47 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[Worker 11] Finished [114/2054] SUCCESS | Molecules: 26608 | Targets: 26584 | Time: 123.90h | SMILES: CC=C1OC(=O)[C@@H](CCCCCC)[C@H]1O...
+[Worker 11] Starting [164/2054] SMILES: CO[C@H]1C(=O)OC(=CCO)[C@@H]1O...
+Job name: starter_00163
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-02-25 01:29:58.573169
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 1238
+Number of reactions: 3036
+Time used for network generation: 43.40 minutes
+
+Job name: starter_00163
+Job type: post-processing pretreat networks
+Job started on: 2026-02-25 02:13:28.431255
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 3036
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 2901
+Time used for network pretreatment: 0.00 minutes
+
+Job name: starter_00163
+Job type: pathway search
+Job started on: 2026-02-25 02:13:28.663251
+Pathway finder started, total number of reactions in network 2901
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.01 minutes
+3 pathways found!
+5 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: starter_00163
+Job type: pathway ranking
+Job started on: 2026-02-25 02:13:29.493776
+Start ranking pathways. Number of pathways after sanitization: 3
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.7467907817442385
+Max_eco 0.8514906578844322
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 7.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 7.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 1.0  x  1  =  1.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.8514906578844322
+pathway by-product 0
+intermediate by-product {None: 0}
+CO[C@H]1C(=O)OC(=CC(O)Cl)[C@@H]1O.NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1>>CO[C@H]1C(=O)OC(=CC(=O)Cl)[C@@H]1O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1
+CO[C@H]1C(=O)OC(=CCCl)[C@@H]1O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O>>CO[C@H]1C(=O)OC(=CC(O)Cl)[C@@H]1O.NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O
+CO[C@H]1C(=O)OC(=CCO)[C@@H]1O.Cl>>CO[C@H]1C(=O)OC(=CCCl)[C@@H]1O.O
+rule0002_153
+rule0004_13
+rule0183_6
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 7.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 1.0  x  1  =  1.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.8514906578844322
+pathway by-product 0
+intermediate by-product {None: 0}
+*C1=C(*)C(=O)C(*)=C(*)C1=O.CO[C@H]1C(=O)OC(=CC(O)Cl)[C@@H]1O>>*c1c(*)c(O)c(*)c(*)c1O.CO[C@H]1C(=O)OC(=CC(=O)Cl)[C@@H]1O
+CO[C@H]1C(=O)OC(=CCCl)[C@@H]1O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O>>CO[C@H]1C(=O)OC(=CC(O)Cl)[C@@H]1O.NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O
+CO[C@H]1C(=O)OC(=CCO)[C@@H]1O.Cl>>CO[C@H]1C(=O)OC(=CCCl)[C@@H]1O.O
+rule0467_8
+rule0004_13
+rule0183_6
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 3
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.7467907817442385
+pathway by-product 0
+intermediate by-product {None: 0}
+CO[C@H]1C(=O)OC(=CC(O)Cl)[C@@H]1O.O=O>>CO[C@H]1C(=O)OC(=CC(=O)Cl)[C@@H]1O.OO
+CO[C@H]1C(=O)OC(=CCCl)[C@@H]1O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O>>CO[C@H]1C(=O)OC(=CC(O)Cl)[C@@H]1O.NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O
+CO[C@H]1C(=O)OC(=CCO)[C@@H]1O.Cl>>CO[C@H]1C(=O)OC(=CCCl)[C@@H]1O.O
+rule0074_18
+rule0004_13
+rule0183_6
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.00 minutes
+
+Job name: starter_00163
+Job type: pathway visualization
+Job started on: 2026-02-25 02:13:29.618527
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  3
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+page done: 3
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.03 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[Worker 16] Finished [89/2054] SUCCESS | Molecules: 20447 | Targets: 20423 | Time: 81.38h | SMILES: CC=C1OC(=O)[C@@H](C(C)C)[C@@H]1O...
+[Worker 16] Starting [148/2054] SMILES: CC=C1OC(=O)[C@@H](CC)[C@H]1O...
+Job name: starter_00147
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-02-22 09:38:36.503653
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 18525
+Number of reactions: 48485
+Time used for network generation: 4031.43 minutes
+
+Job name: starter_00147
+Job type: post-processing pretreat networks
+Job started on: 2026-02-25 04:50:12.064605
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 48485
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 48055
+Time used for network pretreatment: 0.03 minutes
+
+Job name: starter_00147
+Job type: pathway search
+Job started on: 2026-02-25 04:50:13.822035
+Pathway finder started, total number of reactions in network 48055
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.12 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: starter_00147
+Job type: pathway ranking
+Job started on: 2026-02-25 04:50:21.019043
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.8965820110679923
+Max_eco 0.8965820110679923
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.8965820110679923
+pathway by-product 0
+intermediate by-product {None: 0}
+C=CC(O)[C@H](O)[C@H](CC)C(=O)O>>C=CC1(O)C(=O)[C@@H](CC)[C@H]1O.O
+CC=C(O)[C@H](O)[C@H](CC)C(=O)O>>C=CC(O)[C@H](O)[C@H](CC)C(=O)O
+CC=C1OC(=O)[C@@H](CC)[C@H]1O.O>>CC=C(O)[C@H](O)[C@H](CC)C(=O)O
+rule0245_1
+rule0040_7
+rule0035_7
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.00 minutes
+
+Job name: starter_00147
+Job type: pathway visualization
+Job started on: 2026-02-25 04:50:21.085781
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
