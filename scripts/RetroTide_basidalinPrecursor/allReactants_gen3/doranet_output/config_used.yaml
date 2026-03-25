@@ -1,7 +1,7 @@
 input:
   SMILESfile: generated_molecules_diverseStarterSecondExtensionSMILES.csv
   smiles_column: Canonical_SMILES
-  start_index: 0
+  start_index: 178
   num_smiles: null
 output:
   directory: doranet_output

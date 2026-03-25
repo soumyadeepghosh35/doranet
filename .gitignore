@@ -600,4 +600,4 @@ scripts/**/*.pgnet
 # Large parquet datasets under natural_products_data
 scripts/natural_products_data/*.parquet
 *.gif
-
+scripts/RetroTide_basidalinPrecursor/allReactants_gen3/doranet_output/basidalinPrecursor_DORAnetGeneratedMolecules_gen3.csv

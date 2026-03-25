@@ -1,0 +1,3192 @@
+Loaded 20 targets from Ebola_InosineOnly_Antivirals_wARTprediction_top20_SMILESonly.csv
+Selected 20 targets for processing
+Running with 8 parallel jobs
+[START] Ebola_High_pPotency_molecule_pathway1  target=CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O
+[START] Ebola_High_pPotency_molecule_pathway3  target=CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+[START] Ebola_High_pPotency_molecule_pathway4  target=NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1
+[START] Ebola_High_pPotency_molecule_pathway2  target=Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]1O)c1[nH]c(=O)[nH]c(=O)c1N2
+[START] Ebola_High_pPotency_molecule_pathway5  target=Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](O)[C@@H]3O)c2cc1C
+[START] Ebola_High_pPotency_molecule_pathway7  target=*C(=O)[C@H](C)OP(=O)(O)OC[C@@H](O)[C@@H](O)[C@@H](O)Cn1c2nc(=O)[nH]c(=O)c-2cc2ccc(O)cc21
+[START] Ebola_High_pPotency_molecule_pathway6  target=*C(=O)[C@H](C)OP(=O)(O)OC[C@@H](O)[C@@H](O)[C@@H](O)CN1c2cc(O)ccc2Cc2c1[nH]c(=O)[nH]c2=O
+[START] Ebola_High_pPotency_molecule_pathway8  target=*C(=O)CC[C@H](NC(=O)c1ccc(N(C=O)C[C@H]2CNc3nc(N)[nH]c(=O)c3N2)cc1)C(=O)O
+Job name: Ebola_High_pPotency_molecule_pathway5
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 09:52:43.694035
+Checking for targets
+Target found for Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](O)[C@@H]3O)c2cc1C
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 353.33 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway5
+Job type: post-processing pretreat networks
+Job started on: 2026-03-05 15:46:08.471494
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway5
+Job type: pathway search
+Job started on: 2026-03-05 15:46:08.843240
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.04 minutes
+3 pathways found!
+7 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway5
+Job type: pathway ranking
+Job started on: 2026-03-05 15:46:11.300492
+Start ranking pathways. Number of pathways after sanitization: 3
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 1
+Max_eco 1.0
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@@H](O)[C@H]1O>>CC(O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@H]2O[C@]21O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1O>>CC(=O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@@H](O)[C@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1O
+rule0169_1
+rule0062_18
+rule0028_35
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>CC(O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@]2(O)O[C@H]12
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@]2(O)O[C@H]12>>CC(O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@H]2O[C@]21O
+rule0169_1
+rule0062_18
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 3
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>CC(=O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@@H](O)[C@H]1O
+CC(=O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@@H](O)[C@H]1O>>CC(O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@H]2O[C@]21O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+rule0028_35
+rule0169_1
+rule0062_18
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.06 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway5
+Job type: pathway visualization
+Job started on: 2026-03-05 15:46:14.743964
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  3
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+page done: 3
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.06 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway5  genMols=4750  pathwayTargets=4739  time=21216.11s
+[START] Ebola_High_pPotency_molecule_pathway9  target=NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1
+Job name: Ebola_High_pPotency_molecule_pathway7
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 09:52:43.694585
+Checking for targets
+Target found for *C(=O)[C@H](C)OP(=O)(O)OC[C@@H](O)[C@@H](O)[C@@H](O)Cn1c2nc(=O)[nH]c(=O)c-2cc2ccc(O)cc21
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 355.17 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway7
+Job type: post-processing pretreat networks
+Job started on: 2026-03-05 15:47:58.931617
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway7
+Job type: pathway search
+Job started on: 2026-03-05 15:47:59.304250
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.04 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway7
+Job type: pathway ranking
+Job started on: 2026-03-05 15:48:01.746305
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.9480426964153355
+Max_eco 0.9480426964153355
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.9480426964153355
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO>>CC(O)O[C@H]1[C@H]2O[C@@]1(CO)O[C@H]2n1cnc2c(=O)[nH]cnc21
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)O[C@H]1[C@H]2O[C@@]1(CO)O[C@H]2n1cnc2c(=O)[nH]cnc21.Cl>>CC(Cl)O[C@H]1[C@H]2O[C@@]1(CO)O[C@H]2n1cnc2c(=O)[nH]cnc21.O
+rule0169_1
+rule0062_19
+rule0183_6
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.05 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway7
+Job type: pathway visualization
+Job started on: 2026-03-05 15:48:04.537890
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.04 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway7  genMols=4750  pathwayTargets=4739  time=21325.01s
+[START] Ebola_High_pPotency_molecule_pathway10  target=*C(=O)CC[C@H](NC(=O)c1ccc(NC[C@H]2CNc3nc(N)[nH]c(=O)c3N2)cc1)C(=O)O
+Job name: Ebola_High_pPotency_molecule_pathway6
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 09:52:43.695350
+Checking for targets
+Target found for *C(=O)[C@H](C)OP(=O)(O)OC[C@@H](O)[C@@H](O)[C@@H](O)CN1c2cc(O)ccc2Cc2c1[nH]c(=O)[nH]c2=O
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 358.87 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway6
+Job type: post-processing pretreat networks
+Job started on: 2026-03-05 15:51:40.768909
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway6
+Job type: pathway search
+Job started on: 2026-03-05 15:51:41.159092
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.04 minutes
+2 pathways found!
+4 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway6
+Job type: pathway ranking
+Job started on: 2026-03-05 15:51:43.618387
+Start ranking pathways. Number of pathways after sanitization: 2
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.8807912838345305
+Max_eco 1.0
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 7.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 7.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 1.0  x  1  =  1.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>O=c1[nH]cnc2c1nc1n2[C@@H]2O[C@H](CO)[C@@H](O1)[C@H]2O
+O=c1[nH]cnc2c1nc1n2[C@@H]2O[C@H](CO)[C@@H](O1)[C@H]2O>>O=c1[nH]cnc2c1nc1n2[C@@H]2OC[C@@H](O1)[C@@]2(O)CO
+rule0002_154
+rule0169_1
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.8807912838345305
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>O=c1[nH]cnc2c1nc1n2[C@@H]2O[C@H](CO)[C@@H](O1)[C@H]2O
+O=c1[nH]cnc2c1nc1n2[C@@H]2O[C@H](CO)[C@@H](O1)[C@H]2O>>O=c1[nH]cnc2c1nc1n2[C@@H]2OC[C@@H](O1)[C@@]2(O)CO
+rule0073_5
+rule0169_1
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.05 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway6
+Job type: pathway visualization
+Job started on: 2026-03-05 15:51:46.333622
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  2
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.03 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway6  genMols=4750  pathwayTargets=4739  time=21546.26s
+[START] Ebola_High_pPotency_molecule_pathway11  target=Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]1O
+Job name: Ebola_High_pPotency_molecule_pathway8
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 09:52:43.695479
+Checking for targets
+Target found for *C(=O)CC[C@H](NC(=O)c1ccc(N(C=O)C[C@H]2CNc3nc(N)[nH]c(=O)c3N2)cc1)C(=O)O
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 403.23 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway8
+Job type: post-processing pretreat networks
+Job started on: 2026-03-05 16:36:02.530052
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway8
+Job type: pathway search
+Job started on: 2026-03-05 16:36:02.909841
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.04 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway8
+Job type: pathway ranking
+Job started on: 2026-03-05 16:36:05.377369
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.567743484622872
+Max_eco 0.567743484622872
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.567743484622872
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)n(C(C)=O)cnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)n(C(C)=O)cnc32)[C@H](O)[C@@H]1O>>CC(=O)n1c(C)nc2c(ncn2[C@@H]2O[C@H](COC=O)[C@@H](O)[C@H]2O)c1=O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+rule0123_7
+rule0028_51
+rule0062_18
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.06 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway8
+Job type: pathway visualization
+Job started on: 2026-03-05 16:36:08.699271
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.04 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway8  genMols=4750  pathwayTargets=4739  time=24209.18s
+[START] Ebola_High_pPotency_molecule_pathway12  target=CC(=O)O[C@H]1[C@@H](O)[C@@](C)(n2cnc3c(=O)n(C(C)=O)cnc32)O[C@@H]1CO
+Job name: Ebola_High_pPotency_molecule_pathway1
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 09:52:43.690929
+Checking for targets
+Target found for CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 431.55 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway1
+Job type: post-processing pretreat networks
+Job started on: 2026-03-05 17:04:21.857535
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway1
+Job type: pathway search
+Job started on: 2026-03-05 17:04:22.245748
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.04 minutes
+4 pathways found!
+6 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway1
+Job type: pathway ranking
+Job started on: 2026-03-05 17:04:24.737865
+Start ranking pathways. Number of pathways after sanitization: 4
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.5709923098244732
+Max_eco 0.5709923098244732
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.5709923098244732
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO>>CC(O)O[C@@H]1[C@H]2CO[C@@]1(O)[C@H](n1cnc3c(=O)[nH]cnc31)O2
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)O[C@@H]1[C@H]2CO[C@@]1(O)[C@H](n1cnc3c(=O)[nH]cnc31)O2.CC(O)O[C@@H]1[C@H]2CO[C@@]1(O)[C@H](n1cnc3c(=O)[nH]cnc31)O2>>CC(O)O[C@@H]1[C@H]2CO[C@@]1(OC(C)O)[C@H](n1cnc3c(=O)[nH]cnc31)O2.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@@H]2CO[C@]1(O)[C@@H]2O
+rule0169_1
+rule0062_19
+rule0384_1
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.5709923098244732
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO>>CC(O)O[C@@H]1[C@H]2CO[C@@]1(O)[C@H](n1cnc3c(=O)[nH]cnc31)O2
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)O[C@@H]1[C@H]2CO[C@@]1(O)[C@H](n1cnc3c(=O)[nH]cnc31)O2.CC(O)O[C@@H]1[C@H]2CO[C@@]1(O)[C@H](n1cnc3c(=O)[nH]cnc31)O2>>CC(O)O[C@@H]1[C@H]2CO[C@@]1(OC(C)O)[C@H](n1cnc3c(=O)[nH]cnc31)O2.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@@H]2CO[C@]1(O)[C@@H]2O
+rule0169_1
+rule0062_19
+rule0001_88
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 3
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.5709923098244732
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)O[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21>>CC(O)O[C@]12OC[C@@H](O[C@H]1n1cnc3c(=O)[nH]cnc31)[C@H]2O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)O[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)O[C@]12OC[C@@H](O[C@H]1n1cnc3c(=O)[nH]cnc31)[C@H]2O.CC(O)O[C@]12OC[C@@H](O[C@H]1n1cnc3c(=O)[nH]cnc31)[C@H]2O>>CC(O)O[C@@H]1[C@H]2CO[C@@]1(OC(C)O)[C@H](n1cnc3c(=O)[nH]cnc31)O2.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@@H]2CO[C@]1(O)[C@@H]2O
+rule0169_1
+rule0062_19
+rule0384_1
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 4
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.5709923098244732
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)O[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21>>CC(O)O[C@]12OC[C@@H](O[C@H]1n1cnc3c(=O)[nH]cnc31)[C@H]2O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)O[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)O[C@]12OC[C@@H](O[C@H]1n1cnc3c(=O)[nH]cnc31)[C@H]2O.CC(O)O[C@]12OC[C@@H](O[C@H]1n1cnc3c(=O)[nH]cnc31)[C@H]2O>>CC(O)O[C@@H]1[C@H]2CO[C@@]1(OC(C)O)[C@H](n1cnc3c(=O)[nH]cnc31)O2.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@@H]2CO[C@]1(O)[C@@H]2O
+rule0169_1
+rule0062_19
+rule0001_88
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.05 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway1
+Job type: pathway visualization
+Job started on: 2026-03-05 17:04:27.491665
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  4
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+page done: 3
+page done: 4
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.07 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway1  genMols=4750  pathwayTargets=4739  time=25909.77s
+[START] Ebola_High_pPotency_molecule_pathway13  target=O=c1ccn([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@H]2O)c(=O)[nH]1
+Job name: Ebola_High_pPotency_molecule_pathway3
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 09:52:43.690724
+Checking for targets
+Target found for CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 586.76 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway3
+Job type: post-processing pretreat networks
+Job started on: 2026-03-05 19:39:37.725875
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway3
+Job type: pathway search
+Job started on: 2026-03-05 19:39:38.384203
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.07 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway3
+Job type: pathway ranking
+Job started on: 2026-03-05 19:39:42.544809
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.947673405367724
+Max_eco 0.947673405367724
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.947673405367724
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O>>NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.O=C(CO)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+O=C(CO)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>O=COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@](O)(CO)[C@@H]1O
+rule0004_13
+rule0062_18
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.07 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway3
+Job type: pathway visualization
+Job started on: 2026-03-05 19:39:46.450339
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.04 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway3  genMols=4750  pathwayTargets=4739  time=35227.05s
+[START] Ebola_High_pPotency_molecule_pathway14  target=CC(=O)O[C@@H]1[C@H](O)[C@@H](CO)O[C@]1(C)n1cnc2c(=O)n(C(C)=O)cnc21
+Job name: Ebola_High_pPotency_molecule_pathway2
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 09:52:43.691171
+Checking for targets
+Target found for Cc1cc2c(cc1C)N(C[C@H](O)[C@H](O)[C@H](O)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]1O)c1[nH]c(=O)[nH]c(=O)c1N2
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 587.04 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway2
+Job type: post-processing pretreat networks
+Job started on: 2026-03-05 19:39:54.469745
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway2
+Job type: pathway search
+Job started on: 2026-03-05 19:39:55.119037
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.07 minutes
+37 pathways found!
+78 reactions found in all pathways
+Min number of reactions in a pathway: 2
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway2
+Job type: pathway ranking
+Job started on: 2026-03-05 19:39:59.531160
+Start ranking pathways. Number of pathways after sanitization: 16
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.612992960937736
+Max_eco 0.6408972893069445
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 2.0
+max score 6.941648175864737
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.941648175864737
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.9416481758647369  x  1  =  0.9416481758647369
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6392690208453318
+pathway by-product 0
+intermediate by-product {None: 0}
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.941648175864737
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.9416481758647369  x  1  =  0.9416481758647369
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6392690208453318
+pathway by-product 0
+intermediate by-product {None: 0}
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+
+ranking 3
+final score 3.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 1.0  x  1  =  1.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6408972893069445
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0002_154
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 4
+final score 3.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 1.0  x  1  =  1.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6408972893069445
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0002_154
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 5
+final score 2.941648175864737
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.9416481758647369  x  1  =  0.9416481758647369
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6392690208453318
+pathway by-product 0
+intermediate by-product {None: 0}
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](OS(=O)(=O)O)[C@H]1O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0047_1
+rule0127_2
+rule0028_35
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 6
+final score 2.941648175864737
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.9416481758647369  x  1  =  0.9416481758647369
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6392690208453318
+pathway by-product 0
+intermediate by-product {None: 0}
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1OS(=O)(=O)O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0047_1
+rule0127_2
+rule0028_35
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 7
+final score 2.5437115492084605
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.5437115492084607  x  1  =  0.5437115492084607
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6281648665449799
+pathway by-product 0
+intermediate by-product {None: 0}
+CO[C@H]1[C@@H](OS(=O)(=O)O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>CO[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>CO[C@H]1[C@@H](OS(=O)(=O)O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0047_1
+rule0011_51
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 8
+final score 2.5437115492084605
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.5437115492084607  x  1  =  0.5437115492084607
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6281648665449799
+pathway by-product 0
+intermediate by-product {None: 0}
+CO[C@@H]1[C@H](OS(=O)(=O)O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>CO[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>CO[C@@H]1[C@H](OS(=O)(=O)O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0047_1
+rule0011_51
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 9
+final score 2.5437115492084605
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.5437115492084607  x  1  =  0.5437115492084607
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6281648665449799
+pathway by-product 0
+intermediate by-product {None: 0}
+COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0047_1
+rule0011_50
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 10
+final score 2.5437115492084605
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.5437115492084607  x  1  =  0.5437115492084607
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6281648665449799
+pathway by-product 0
+intermediate by-product {None: 0}
+COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0047_1
+rule0011_50
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 11
+final score 2.5156470131124298
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.5156470131124298  x  1  =  0.5156470131124298
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6273817445142268
+pathway by-product 0
+intermediate by-product {None: 0}
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>C[n+]1cn([C@@H]2O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]2O)c2nc[nH]c(=O)c21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+C[n+]1cn([C@@H]2O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]2O)c2nc[nH]c(=O)c21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>C[n+]1cn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c2nc[nH]c(=O)c21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0121_1
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 12
+final score 2.5156470131124298
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.5156470131124298  x  1  =  0.5156470131124298
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6273817445142268
+pathway by-product 0
+intermediate by-product {None: 0}
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>C[n+]1cn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2OS(=O)(=O)O)c2nc[nH]c(=O)c21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+C[n+]1cn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2OS(=O)(=O)O)c2nc[nH]c(=O)c21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>C[n+]1cn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c2nc[nH]c(=O)c21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0121_1
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 13
+final score 2.4888728984200332
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.48887289842003306  x  1  =  0.48887289842003306
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6266346308260553
+pathway by-product 0
+intermediate by-product {None: 0}
+C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0047_1
+rule0005_62
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 14
+final score 2.4888728984200332
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.48887289842003306  x  1  =  0.48887289842003306
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6266346308260553
+pathway by-product 0
+intermediate by-product {None: 0}
+C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0047_1
+rule0005_62
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 15
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.612992960937736
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0073_5
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 16
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.612992960937736
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0073_5
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.06 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway2
+Job type: pathway visualization
+Job started on: 2026-03-05 19:40:03.336876
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  16
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+page done: 3
+page done: 4
+page done: 5
+page done: 6
+page done: 7
+page done: 8
+page done: 9
+page done: 10
+page done: 11
+page done: 12
+page done: 13
+page done: 14
+page done: 15
+page done: 16
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.16 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway2  genMols=4750  pathwayTargets=4739  time=35250.98s
+[START] Ebola_High_pPotency_molecule_pathway15  target=CC(=O)O[C@H]1[C@](C)(O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@]1(C)CO
+Job name: Ebola_High_pPotency_molecule_pathway4
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 09:52:43.690656
+Checking for targets
+Target found for NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 598.36 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway4
+Job type: post-processing pretreat networks
+Job started on: 2026-03-05 19:51:13.040742
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway4
+Job type: pathway search
+Job started on: 2026-03-05 19:51:13.701645
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.07 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway4
+Job type: pathway ranking
+Job started on: 2026-03-05 19:51:17.815268
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.947673405367724
+Max_eco 0.947673405367724
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.947673405367724
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O>>COC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+COC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>O=c1[nH]cnc2c1ncn2[C@@H]1O[C@@H]2COC(O)OCO[C@H]2[C@H]1O
+rule0083_11
+rule0062_18
+rule0169_1
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.06 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway4
+Job type: pathway visualization
+Job started on: 2026-03-05 19:51:21.630015
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.04 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway4  genMols=4750  pathwayTargets=4739  time=35922.14s
+[START] Ebola_High_pPotency_molecule_pathway16  target=CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)n(C(C)=O)cnc32)O[C@@]1(C)CO
+Job name: Ebola_High_pPotency_molecule_pathway10
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 15:48:08.004431
+Checking for targets
+Target found for *C(=O)CC[C@H](NC(=O)c1ccc(NC[C@H]2CNc3nc(N)[nH]c(=O)c3N2)cc1)C(=O)O
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 356.64 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway10
+Job type: post-processing pretreat networks
+Job started on: 2026-03-05 21:44:51.399907
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway10
+Job type: pathway search
+Job started on: 2026-03-05 21:44:51.782438
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.04 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway10
+Job type: pathway ranking
+Job started on: 2026-03-05 21:44:54.240754
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.9480426964153355
+Max_eco 0.9480426964153355
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.9480426964153355
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO>>CC(O)O[C@H]1[C@H]2O[C@@]1(CO)O[C@H]2n1cnc2c(=O)[nH]cnc21
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)O[C@H]1[C@H]2O[C@@]1(CO)O[C@H]2n1cnc2c(=O)[nH]cnc21.Cl>>CC(Cl)O[C@H]1[C@H]2O[C@@]1(CO)O[C@H]2n1cnc2c(=O)[nH]cnc21.O
+rule0169_1
+rule0062_19
+rule0183_6
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.05 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway10
+Job type: pathway visualization
+Job started on: 2026-03-05 21:44:56.947839
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.04 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway10  genMols=4750  pathwayTargets=4739  time=21411.32s
+[START] Ebola_High_pPotency_molecule_pathway17  target=Cn1cnc2c(c1=O)[n+](C)cn2[C@@H]1O[C@H](C(=O)O)[C@@H](O)[C@H]1O
+Job name: Ebola_High_pPotency_molecule_pathway9
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 15:46:19.129520
+Checking for targets
+Target found for NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 410.91 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway9
+Job type: post-processing pretreat networks
+Job started on: 2026-03-05 22:37:18.771104
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway9
+Job type: pathway search
+Job started on: 2026-03-05 22:37:19.145291
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.04 minutes
+3 pathways found!
+7 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway9
+Job type: pathway ranking
+Job started on: 2026-03-05 22:37:21.587603
+Start ranking pathways. Number of pathways after sanitization: 3
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 1
+Max_eco 1.0
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@@H](O)[C@H]1O>>CC(O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@H]2O[C@]21O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1O>>CC(=O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@@H](O)[C@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1O
+rule0169_1
+rule0062_18
+rule0028_35
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>CC(O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@]2(O)O[C@H]12
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@]2(O)O[C@H]12>>CC(O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@H]2O[C@]21O
+rule0169_1
+rule0062_18
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 3
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>CC(=O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@@H](O)[C@H]1O
+CC(=O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@@H](O)[C@H]1O>>CC(O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@H]2O[C@]21O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+rule0028_35
+rule0169_1
+rule0062_18
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.06 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway9
+Job type: pathway visualization
+Job started on: 2026-03-05 22:37:25.425110
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  3
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+page done: 3
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.06 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway9  genMols=4750  pathwayTargets=4739  time=24669.90s
+[START] Ebola_High_pPotency_molecule_pathway18  target=CC(=O)O[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1n1cnc2c(=O)n(C(C)(O)C#N)cnc21
+Job name: Ebola_High_pPotency_molecule_pathway11
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 15:51:49.049826
+Checking for targets
+Target found for Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]1O
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 424.85 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway11
+Job type: post-processing pretreat networks
+Job started on: 2026-03-05 22:56:48.747080
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway11
+Job type: pathway search
+Job started on: 2026-03-05 22:56:49.396982
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.07 minutes
+2 pathways found!
+4 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway11
+Job type: pathway ranking
+Job started on: 2026-03-05 22:56:53.580383
+Start ranking pathways. Number of pathways after sanitization: 2
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.8807912838345305
+Max_eco 1.0
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 7.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 7.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 1.0  x  1  =  1.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>O=c1[nH]cnc2c1nc1n2[C@@H]2O[C@H](CO)[C@@H](O1)[C@H]2O
+O=c1[nH]cnc2c1nc1n2[C@@H]2O[C@H](CO)[C@@H](O1)[C@H]2O>>O=c1[nH]cnc2c1nc1n2[C@@H]2OC[C@@H](O1)[C@@]2(O)CO
+rule0002_154
+rule0169_1
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.8807912838345305
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>O=c1[nH]cnc2c1nc1n2[C@@H]2O[C@H](CO)[C@@H](O1)[C@H]2O
+O=c1[nH]cnc2c1nc1n2[C@@H]2O[C@H](CO)[C@@H](O1)[C@H]2O>>O=c1[nH]cnc2c1nc1n2[C@@H]2OC[C@@H](O1)[C@@]2(O)CO
+rule0073_5
+rule0169_1
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.06 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway11
+Job type: pathway visualization
+Job started on: 2026-03-05 22:56:57.370290
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  2
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.05 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway11  genMols=4750  pathwayTargets=4739  time=25511.32s
+[START] Ebola_High_pPotency_molecule_pathway19  target=C[C@H]1O[C@@H](n2c[n+](C)c3c(=O)n(C)cnc32)[C@H](O)[C@@H]1O
+Job name: Ebola_High_pPotency_molecule_pathway12
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 16:36:12.252533
+Checking for targets
+Target found for CC(=O)O[C@H]1[C@@H](O)[C@@](C)(n2cnc3c(=O)n(C(C)=O)cnc32)O[C@@H]1CO
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 403.51 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway12
+Job type: post-processing pretreat networks
+Job started on: 2026-03-05 23:19:48.658493
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway12
+Job type: pathway search
+Job started on: 2026-03-05 23:19:49.034439
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.04 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway12
+Job type: pathway ranking
+Job started on: 2026-03-05 23:19:51.520566
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.567743484622872
+Max_eco 0.567743484622872
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.567743484622872
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)n(C(C)=O)cnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)n(C(C)=O)cnc32)[C@H](O)[C@@H]1O>>CC(=O)n1c(C)nc2c(ncn2[C@@H]2O[C@H](COC=O)[C@@H](O)[C@H]2O)c1=O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+rule0123_7
+rule0028_51
+rule0062_18
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.04 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway12
+Job type: pathway visualization
+Job started on: 2026-03-05 23:19:54.180927
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.04 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway12  genMols=4750  pathwayTargets=4739  time=24224.20s
+[START] Ebola_High_pPotency_molecule_pathway20  target=Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]1O
+Job name: Ebola_High_pPotency_molecule_pathway13
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 17:04:32.950361
+Checking for targets
+Target found for O=c1ccn([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@H]2O)c(=O)[nH]1
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 444.27 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway13
+Job type: post-processing pretreat networks
+Job started on: 2026-03-06 00:28:54.141409
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway13
+Job type: pathway search
+Job started on: 2026-03-06 00:28:54.522137
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.04 minutes
+4 pathways found!
+6 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway13
+Job type: pathway ranking
+Job started on: 2026-03-06 00:28:56.978788
+Start ranking pathways. Number of pathways after sanitization: 4
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.5709923098244732
+Max_eco 0.5709923098244732
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.5709923098244732
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO>>CC(O)O[C@@H]1[C@H]2CO[C@@]1(O)[C@H](n1cnc3c(=O)[nH]cnc31)O2
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)O[C@@H]1[C@H]2CO[C@@]1(O)[C@H](n1cnc3c(=O)[nH]cnc31)O2.CC(O)O[C@@H]1[C@H]2CO[C@@]1(O)[C@H](n1cnc3c(=O)[nH]cnc31)O2>>CC(O)O[C@@H]1[C@H]2CO[C@@]1(OC(C)O)[C@H](n1cnc3c(=O)[nH]cnc31)O2.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@@H]2CO[C@]1(O)[C@@H]2O
+rule0169_1
+rule0062_19
+rule0384_1
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.5709923098244732
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO>>CC(O)O[C@@H]1[C@H]2CO[C@@]1(O)[C@H](n1cnc3c(=O)[nH]cnc31)O2
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)O[C@@H]1[C@H]2CO[C@@]1(O)[C@H](n1cnc3c(=O)[nH]cnc31)O2.CC(O)O[C@@H]1[C@H]2CO[C@@]1(O)[C@H](n1cnc3c(=O)[nH]cnc31)O2>>CC(O)O[C@@H]1[C@H]2CO[C@@]1(OC(C)O)[C@H](n1cnc3c(=O)[nH]cnc31)O2.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@@H]2CO[C@]1(O)[C@@H]2O
+rule0169_1
+rule0062_19
+rule0001_88
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 3
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.5709923098244732
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)O[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21>>CC(O)O[C@]12OC[C@@H](O[C@H]1n1cnc3c(=O)[nH]cnc31)[C@H]2O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)O[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)O[C@]12OC[C@@H](O[C@H]1n1cnc3c(=O)[nH]cnc31)[C@H]2O.CC(O)O[C@]12OC[C@@H](O[C@H]1n1cnc3c(=O)[nH]cnc31)[C@H]2O>>CC(O)O[C@@H]1[C@H]2CO[C@@]1(OC(C)O)[C@H](n1cnc3c(=O)[nH]cnc31)O2.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@@H]2CO[C@]1(O)[C@@H]2O
+rule0169_1
+rule0062_19
+rule0384_1
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 4
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.5709923098244732
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)O[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21>>CC(O)O[C@]12OC[C@@H](O[C@H]1n1cnc3c(=O)[nH]cnc31)[C@H]2O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)O[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)O[C@]12OC[C@@H](O[C@H]1n1cnc3c(=O)[nH]cnc31)[C@H]2O.CC(O)O[C@]12OC[C@@H](O[C@H]1n1cnc3c(=O)[nH]cnc31)[C@H]2O>>CC(O)O[C@@H]1[C@H]2CO[C@@]1(OC(C)O)[C@H](n1cnc3c(=O)[nH]cnc31)O2.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@@H]2CO[C@]1(O)[C@@H]2O
+rule0169_1
+rule0062_19
+rule0001_88
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.06 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway13
+Job type: pathway visualization
+Job started on: 2026-03-06 00:29:00.382195
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  4
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+page done: 3
+page done: 4
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.07 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway13  genMols=4750  pathwayTargets=4739  time=26671.84s
+Job name: Ebola_High_pPotency_molecule_pathway14
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 19:39:50.365497
+Checking for targets
+Target found for CC(=O)O[C@@H]1[C@H](O)[C@@H](CO)O[C@]1(C)n1cnc2c(=O)n(C(C)=O)cnc21
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 447.23 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway14
+Job type: post-processing pretreat networks
+Job started on: 2026-03-06 03:07:09.688016
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway14
+Job type: pathway search
+Job started on: 2026-03-06 03:07:10.061052
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.04 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway14
+Job type: pathway ranking
+Job started on: 2026-03-06 03:07:12.530529
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.947673405367724
+Max_eco 0.947673405367724
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.947673405367724
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O>>NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.O=C(CO)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+O=C(CO)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>O=COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@](O)(CO)[C@@H]1O
+rule0004_13
+rule0062_18
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.06 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway14
+Job type: pathway visualization
+Job started on: 2026-03-06 03:07:16.296020
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.04 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway14  genMols=4750  pathwayTargets=4739  time=26848.56s
+Job name: Ebola_High_pPotency_molecule_pathway17
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 21:45:00.117006
+Checking for targets
+Target found for Cn1cnc2c(c1=O)[n+](C)cn2[C@@H]1O[C@H](C(=O)O)[C@@H](O)[C@H]1O
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 369.30 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway17
+Job type: post-processing pretreat networks
+Job started on: 2026-03-06 03:54:23.335325
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway17
+Job type: pathway search
+Job started on: 2026-03-06 03:54:23.705807
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.04 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway17
+Job type: pathway ranking
+Job started on: 2026-03-06 03:54:26.048357
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.9480426964153355
+Max_eco 0.9480426964153355
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.9480426964153355
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO>>CC(O)O[C@H]1[C@H]2O[C@@]1(CO)O[C@H]2n1cnc2c(=O)[nH]cnc21
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)O[C@H]1[C@H]2O[C@@]1(CO)O[C@H]2n1cnc2c(=O)[nH]cnc21.Cl>>CC(Cl)O[C@H]1[C@H]2O[C@@]1(CO)O[C@H]2n1cnc2c(=O)[nH]cnc21.O
+rule0169_1
+rule0062_19
+rule0183_6
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.04 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway17
+Job type: pathway visualization
+Job started on: 2026-03-06 03:54:28.728559
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.03 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway17  genMols=4750  pathwayTargets=4739  time=22170.69s
+Job name: Ebola_High_pPotency_molecule_pathway18
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 22:37:30.082641
+Checking for targets
+Target found for CC(=O)O[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1n1cnc2c(=O)n(C(C)(O)C#N)cnc21
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 365.08 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway18
+Job type: post-processing pretreat networks
+Job started on: 2026-03-06 04:42:39.930189
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway18
+Job type: pathway search
+Job started on: 2026-03-06 04:42:40.306332
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.04 minutes
+3 pathways found!
+7 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway18
+Job type: pathway ranking
+Job started on: 2026-03-06 04:42:42.657667
+Start ranking pathways. Number of pathways after sanitization: 3
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 1
+Max_eco 1.0
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@@H](O)[C@H]1O>>CC(O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@H]2O[C@]21O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1O>>CC(=O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@@H](O)[C@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1O
+rule0169_1
+rule0062_18
+rule0028_35
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>CC(O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@]2(O)O[C@H]12
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+CC(O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@]2(O)O[C@H]12>>CC(O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@H]2O[C@]21O
+rule0169_1
+rule0062_18
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 3
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>CC(=O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@@H](O)[C@H]1O
+CC(=O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@@H](O)[C@H]1O>>CC(O)OC[C@]1(n2cnc3c(=O)[nH]cnc32)OC[C@H]2O[C@]21O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+rule0028_35
+rule0169_1
+rule0062_18
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.06 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway18
+Job type: pathway visualization
+Job started on: 2026-03-06 04:42:46.014844
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  3
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+page done: 3
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.06 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway18  genMols=4750  pathwayTargets=4739  time=21919.48s
+Job name: Ebola_High_pPotency_molecule_pathway16
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 19:51:25.430131
+Checking for targets
+Target found for CC(=O)O[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)n(C(C)=O)cnc32)O[C@@]1(C)CO
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 547.52 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway16
+Job type: post-processing pretreat networks
+Job started on: 2026-03-06 04:59:01.890514
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway16
+Job type: pathway search
+Job started on: 2026-03-06 04:59:02.268069
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.04 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway16
+Job type: pathway ranking
+Job started on: 2026-03-06 04:59:04.727679
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.947673405367724
+Max_eco 0.947673405367724
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.947673405367724
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O>>COC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+COC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>O=c1[nH]cnc2c1ncn2[C@@H]1O[C@@H]2COC(O)OCO[C@H]2[C@H]1O
+rule0083_11
+rule0062_18
+rule0169_1
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.06 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway16
+Job type: pathway visualization
+Job started on: 2026-03-06 04:59:08.284964
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.04 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway16  genMols=4750  pathwayTargets=4739  time=32865.39s
+Job name: Ebola_High_pPotency_molecule_pathway15
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 19:40:14.337726
+Checking for targets
+Target found for CC(=O)O[C@H]1[C@](C)(O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@]1(C)CO
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 594.97 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway15
+Job type: post-processing pretreat networks
+Job started on: 2026-03-06 05:35:20.737518
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway15
+Job type: pathway search
+Job started on: 2026-03-06 05:35:21.377349
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.07 minutes
+37 pathways found!
+78 reactions found in all pathways
+Min number of reactions in a pathway: 2
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway15
+Job type: pathway ranking
+Job started on: 2026-03-06 05:35:25.737470
+Start ranking pathways. Number of pathways after sanitization: 16
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.612992960937736
+Max_eco 0.6408972893069445
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 2.0
+max score 6.941648175864737
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.941648175864737
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.9416481758647369  x  1  =  0.9416481758647369
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6392690208453318
+pathway by-product 0
+intermediate by-product {None: 0}
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.941648175864737
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.9416481758647369  x  1  =  0.9416481758647369
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6392690208453318
+pathway by-product 0
+intermediate by-product {None: 0}
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+
+ranking 3
+final score 3.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 1.0  x  1  =  1.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6408972893069445
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0002_154
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 4
+final score 3.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 1.0  x  1  =  1.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6408972893069445
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0002_154
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 5
+final score 2.941648175864737
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.9416481758647369  x  1  =  0.9416481758647369
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6392690208453318
+pathway by-product 0
+intermediate by-product {None: 0}
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](OS(=O)(=O)O)[C@H]1O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0047_1
+rule0127_2
+rule0028_35
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 6
+final score 2.941648175864737
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.9416481758647369  x  1  =  0.9416481758647369
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6392690208453318
+pathway by-product 0
+intermediate by-product {None: 0}
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1OS(=O)(=O)O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>O=c1[nH]cnc2c1ncn2[C@@]1(CO)OC[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0047_1
+rule0127_2
+rule0028_35
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 7
+final score 2.5437115492084605
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.5437115492084607  x  1  =  0.5437115492084607
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6281648665449799
+pathway by-product 0
+intermediate by-product {None: 0}
+CO[C@H]1[C@@H](OS(=O)(=O)O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>CO[C@H]1[C@@H](O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>CO[C@H]1[C@@H](OS(=O)(=O)O)[C@H](n2cnc3c(=O)[nH]cnc32)O[C@@H]1CO.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0047_1
+rule0011_51
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 8
+final score 2.5437115492084605
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.5437115492084607  x  1  =  0.5437115492084607
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6281648665449799
+pathway by-product 0
+intermediate by-product {None: 0}
+CO[C@@H]1[C@H](OS(=O)(=O)O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>CO[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>CO[C@@H]1[C@H](OS(=O)(=O)O)[C@@H](CO)O[C@H]1n1cnc2c(=O)[nH]cnc21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0047_1
+rule0011_51
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 9
+final score 2.5437115492084605
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.5437115492084607  x  1  =  0.5437115492084607
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6281648665449799
+pathway by-product 0
+intermediate by-product {None: 0}
+COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0047_1
+rule0011_50
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 10
+final score 2.5437115492084605
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.5437115492084607  x  1  =  0.5437115492084607
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6281648665449799
+pathway by-product 0
+intermediate by-product {None: 0}
+COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>COC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0047_1
+rule0011_50
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 11
+final score 2.5156470131124298
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.5156470131124298  x  1  =  0.5156470131124298
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6273817445142268
+pathway by-product 0
+intermediate by-product {None: 0}
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>C[n+]1cn([C@@H]2O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]2O)c2nc[nH]c(=O)c21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+C[n+]1cn([C@@H]2O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]2O)c2nc[nH]c(=O)c21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>C[n+]1cn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c2nc[nH]c(=O)c21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0121_1
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 12
+final score 2.5156470131124298
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.5156470131124298  x  1  =  0.5156470131124298
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6273817445142268
+pathway by-product 0
+intermediate by-product {None: 0}
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>C[n+]1cn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2OS(=O)(=O)O)c2nc[nH]c(=O)c21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+C[n+]1cn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2OS(=O)(=O)O)c2nc[nH]c(=O)c21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>C[n+]1cn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c2nc[nH]c(=O)c21.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0121_1
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 13
+final score 2.4888728984200332
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.48887289842003306  x  1  =  0.48887289842003306
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6266346308260553
+pathway by-product 0
+intermediate by-product {None: 0}
+C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0047_1
+rule0005_62
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 14
+final score 2.4888728984200332
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.48887289842003306  x  1  =  0.48887289842003306
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.6266346308260553
+pathway by-product 0
+intermediate by-product {None: 0}
+C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O>>C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O
+NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0047_1
+rule0005_62
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 15
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.612992960937736
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O>>NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1OS(=O)(=O)O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](OS(=O)(=O)O)[C@H]1O
+rule0073_5
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 16
+final score 2.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 0.0  x  4  =  0.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.612992960937736
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O>>NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O
+Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](OS(=O)(=O)O)[C@@H]1O>>Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OS(=O)(=O)O)[C@@H](OP(=O)(O)O)[C@H]1O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=S(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1OS(=O)(=O)O
+rule0073_5
+rule0047_1
+rule0127_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.06 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway15
+Job type: pathway visualization
+Job started on: 2026-03-06 05:35:29.629404
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  16
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+page done: 3
+page done: 4
+page done: 5
+page done: 6
+page done: 7
+page done: 8
+page done: 9
+page done: 10
+page done: 11
+page done: 12
+page done: 13
+page done: 14
+page done: 15
+page done: 16
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.16 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway15  genMols=4750  pathwayTargets=4739  time=35725.03s
+Job name: Ebola_High_pPotency_molecule_pathway19
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 22:57:01.739186
+Checking for targets
+Target found for C[C@H]1O[C@@H](n2c[n+](C)c3c(=O)n(C)cnc32)[C@H](O)[C@@H]1O
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 598.39 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway19
+Job type: post-processing pretreat networks
+Job started on: 2026-03-06 08:55:33.713837
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway19
+Job type: pathway search
+Job started on: 2026-03-06 08:55:34.368586
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.07 minutes
+2 pathways found!
+4 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway19
+Job type: pathway ranking
+Job started on: 2026-03-06 08:55:38.364320
+Start ranking pathways. Number of pathways after sanitization: 2
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.8807912838345305
+Max_eco 1.0
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 7.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 7.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 1.0  x  1  =  1.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>O=c1[nH]cnc2c1nc1n2[C@@H]2O[C@H](CO)[C@@H](O1)[C@H]2O
+O=c1[nH]cnc2c1nc1n2[C@@H]2O[C@H](CO)[C@@H](O1)[C@H]2O>>O=c1[nH]cnc2c1nc1n2[C@@H]2OC[C@@H](O1)[C@@]2(O)CO
+rule0002_154
+rule0169_1
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.8807912838345305
+pathway by-product 0
+intermediate by-product {None: 0}
+NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.O=O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.O.O.O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O
+O=C[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>O=c1[nH]cnc2c1nc1n2[C@@H]2O[C@H](CO)[C@@H](O1)[C@H]2O
+O=c1[nH]cnc2c1nc1n2[C@@H]2O[C@H](CO)[C@@H](O1)[C@H]2O>>O=c1[nH]cnc2c1nc1n2[C@@H]2OC[C@@H](O1)[C@@]2(O)CO
+rule0073_5
+rule0169_1
+rule0028_50
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.07 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway19
+Job type: pathway visualization
+Job started on: 2026-03-06 08:55:42.344879
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  2
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+page done: 2
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.05 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway19  genMols=4750  pathwayTargets=4739  time=35923.68s
+Job name: Ebola_High_pPotency_molecule_pathway20
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-05 23:19:57.573116
+Checking for targets
+Target found for Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)OP(=O)(O)O)[C@@H](O)[C@H]1O
+Number of generations: 3
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 4749
+Number of reactions: 8954
+Time used for network generation: 596.30 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway20
+Job type: post-processing pretreat networks
+Job started on: 2026-03-06 09:16:23.986122
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 8954
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 8820
+Time used for network pretreatment: 0.01 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway20
+Job type: pathway search
+Job started on: 2026-03-06 09:16:24.629382
+Pathway finder started, total number of reactions in network 8820
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.07 minutes
+1 pathways found!
+3 reactions found in all pathways
+Min number of reactions in a pathway: 3
+Max number of reactions in a pathway: 3
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: Ebola_High_pPotency_molecule_pathway20
+Job type: pathway ranking
+Job started on: 2026-03-06 09:16:28.620716
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.567743484622872
+Max_eco 0.567743484622872
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.567743484622872
+pathway by-product 0
+intermediate by-product {None: 0}
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)n(C(C)=O)cnc32)[C@H](O)[C@@H]1O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O
+CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)n(C(C)=O)cnc32)[C@H](O)[C@@H]1O>>CC(=O)n1c(C)nc2c(ncn2[C@@H]2O[C@H](COC=O)[C@@H](O)[C@H]2O)c1=O
+CC(=O)SCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O.O=c1[nH]cnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O>>CC(=O)OC[C@H]1O[C@@H](n2cnc3c(=O)[nH]cnc32)[C@H](O)[C@@H]1O.CC(C)(COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)[C@@H](O)C(=O)NCCC(=O)NCCS
+rule0123_7
+rule0028_51
+rule0062_18
+No_Thermo
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.06 minutes
+
+Job name: Ebola_High_pPotency_molecule_pathway20
+Job type: pathway visualization
+Job started on: 2026-03-06 09:16:32.383544
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.04 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+[DONE]  Ebola_High_pPotency_molecule_pathway20  genMols=4750  pathwayTargets=4739  time=35797.46s
+
+Saved summary to Ebola_High_pPotency_jobs_summary.csv
+status
+ok    20
+Name: count, dtype: int64
+Time: 84234.24 s

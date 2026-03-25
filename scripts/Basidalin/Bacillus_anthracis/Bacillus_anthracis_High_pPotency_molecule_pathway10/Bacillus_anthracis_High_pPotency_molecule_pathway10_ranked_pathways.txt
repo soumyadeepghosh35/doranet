@@ -1,0 +1,96 @@
+ranking 1
+final score 7.0
+atomic economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+reaction SMILES, name, and enthalpy:
+CC(C=O)C1OC(=O)C=C1N.C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O>>CC(C)(C=O)C1OC(=O)C=C1N.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.NC1=CC(=O)OC1CC=O>>CC(C=O)C1OC(=O)C=C1N.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.NC1=CC(=O)O/C1=C/C=O>>NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.NC1=CC(=O)OC1CC=O
+rule0043_12
+rule0043_12
+rule0027_65
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 7.0
+atomic economy 1.0
+pathway by-product 0
+intermediate by-product {None: 0}
+reaction SMILES, name, and enthalpy:
+C/C(C=O)=C1\OC(=O)C=C1N.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1>>CC(C=O)C1OC(=O)C=C1N.NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1
+CC(C=O)C1OC(=O)C=C1N.C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O>>CC(C)(C=O)C1OC(=O)C=C1N.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.NC1=CC(=O)O/C1=C/C=O>>C/C(C=O)=C1\OC(=O)C=C1N.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+rule0027_63
+rule0043_12
+rule0043_12
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 3
+final score 6.709763349721778
+atomic economy 0.8409468232112856
+pathway by-product 0
+intermediate by-product {None: 0}
+reaction SMILES, name, and enthalpy:
+CC(C=O)C1OC(=O)C=C1N.C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O>>CC(C)(C=O)C1OC(=O)C=C1N.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.NC1=CC(=O)OC1CC=O>>CC(C=O)C1OC(=O)C=C1N.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+NC1=CC(=O)O/C1=C/C=O.OO>>NC1=CC(=O)OC1CC=O.O=O
+rule0043_12
+rule0043_12
+rule0114_4
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 4
+final score 6.709763349721778
+atomic economy 0.8409468232112856
+pathway by-product 0
+intermediate by-product {None: 0}
+reaction SMILES, name, and enthalpy:
+C/C(C=O)=C1\OC(=O)C=C1N.OO>>CC(C=O)C1OC(=O)C=C1N.O=O
+CC(C=O)C1OC(=O)C=C1N.C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O>>CC(C)(C=O)C1OC(=O)C=C1N.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.NC1=CC(=O)O/C1=C/C=O>>C/C(C=O)=C1\OC(=O)C=C1N.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+rule0114_4
+rule0043_12
+rule0043_12
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 5
+final score 6.170098089174377
+atomic economy 0.5452037666045775
+pathway by-product 0
+intermediate by-product {None: 0}
+reaction SMILES, name, and enthalpy:
+C/C(C=O)=C1\OC(=O)C=C1N.NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1>>CC(C=O)C1OC(=O)C=C1N.NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1
+CC(C=O)C1OC(=O)C=C1N.CC(C=O)C1OC(=O)C=C1N>>CC(C)(C=O)C1OC(=O)C=C1N.NC1=CC(=O)OC1CC=O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.NC1=CC(=O)O/C1=C/C=O>>C/C(C=O)=C1\OC(=O)C=C1N.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+rule0027_63
+rule0126_2
+rule0043_12
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 6
+final score 6.0
+atomic economy 0.4519879669357898
+pathway by-product 0
+intermediate by-product {None: 0}
+reaction SMILES, name, and enthalpy:
+C/C(C=O)=C1\OC(=O)C=C1N.OO>>CC(C=O)C1OC(=O)C=C1N.O=O
+CC(C=O)C1OC(=O)C=C1N.CC(C=O)C1OC(=O)C=C1N>>CC(C)(C=O)C1OC(=O)C=C1N.NC1=CC(=O)OC1CC=O
+C[S+](CC[C@H](N)C(=O)O)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O.NC1=CC(=O)O/C1=C/C=O>>C/C(C=O)=C1\OC(=O)C=C1N.Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O
+rule0114_4
+rule0126_2
+rule0043_12
+No_Thermo
+No_Thermo
+No_Thermo
+

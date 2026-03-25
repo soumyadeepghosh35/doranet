@@ -1,0 +1,64 @@
+ranking 1
+final score 7.0
+atomic economy 0.6262619126912842
+pathway by-product 0
+intermediate by-product {None: 0}
+reaction SMILES, name, and enthalpy:
+N.NC1=C(C=O)C(=O)O/C1=C/C=O>>NC1=C(C=O)C(=O)OC1(N)CC=O
+NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.NC1=C(C=O)C(=O)OC1(N)CC=O>>NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.NC1=C(C=O)C(=O)OC1(N)CCO
+NC1=CC(=O)O/C1=C/C=O.NC1=CC(=O)O/C1=C/C=O>>C=C1OC(=O)C=C1N.NC1=C(C=O)C(=O)O/C1=C/C=O
+rule0257_1
+rule0003_170
+rule0126_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 2
+final score 6.6172695895052795
+atomic economy 0.5923263908774475
+pathway by-product 0
+intermediate by-product {None: 0}
+reaction SMILES, name, and enthalpy:
+N.NC1=CC(=O)O/C1=C/C=O>>NC1=CC(=O)OC1(N)CC=O
+NC(=O)C1=CN([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)C=CC1.NC1=C(C=O)C(=O)OC1(N)CC=O>>NC(=O)c1ccc[n+]([C@@H]2O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]3O[C@@H](n4cnc5c(N)ncnc54)[C@H](OP(=O)(O)O)[C@@H]3O)[C@@H](O)[C@H]2O)c1.NC1=C(C=O)C(=O)OC1(N)CCO
+NC1=CC(=O)OC1(N)CC=O.NC1=CC(=O)OC1(N)CC=O>>CC1(N)OC(=O)C=C1N.NC1=C(C=O)C(=O)OC1(N)CC=O
+rule0257_1
+rule0003_170
+rule0126_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 3
+final score 6.313608803115029
+atomic economy 0.5654017280913549
+pathway by-product 0
+intermediate by-product {None: 0}
+reaction SMILES, name, and enthalpy:
+N.NC1=C(C=O)C(=O)O/C1=C/C=O>>NC1=C(C=O)C(=O)OC1(N)CC=O
+NC1=C(C=O)C(=O)OC1(N)CC=O.OO>>NC1=C(C=O)C(=O)OC1(N)CCO.O=O
+NC1=CC(=O)O/C1=C/C=O.NC1=CC(=O)O/C1=C/C=O>>C=C1OC(=O)C=C1N.NC1=C(C=O)C(=O)O/C1=C/C=O
+rule0257_1
+rule0078_17
+rule0126_2
+No_Thermo
+No_Thermo
+No_Thermo
+
+ranking 4
+final score 6.0
+atomic economy 0.5375950054288816
+pathway by-product 0
+intermediate by-product {None: 0}
+reaction SMILES, name, and enthalpy:
+N.NC1=CC(=O)O/C1=C/C=O>>NC1=CC(=O)OC1(N)CC=O
+NC1=C(C=O)C(=O)OC1(N)CC=O.OO>>NC1=C(C=O)C(=O)OC1(N)CCO.O=O
+NC1=CC(=O)OC1(N)CC=O.NC1=CC(=O)OC1(N)CC=O>>CC1(N)OC(=O)C=C1N.NC1=C(C=O)C(=O)OC1(N)CC=O
+rule0257_1
+rule0078_17
+rule0126_2
+No_Thermo
+No_Thermo
+No_Thermo
+

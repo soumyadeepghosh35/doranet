@@ -1,0 +1,110 @@
+Starter: C1=C(/C(=C\C=O)/OC1=O)N
+Job name: BasidalinOnly_gen2
+Job type: enzymatic network expansion forward
+Ruleset: JN3604IMT (JN3604IMT_rules.tsv)
+Job started on: 2026-03-10 10:40:18.356158
+Number of generations: 2
+Number of operators loaded: 3571
+Number of molecules before expantion (including cofactors): 42
+Number of molecules after expantion (including cofactors): 377
+Number of reactions: 549
+Time used for network generation: 3.44 minutes
+
+
+Generated 377 new molecules + 1 starters
+Using 367 generated molecules as targets for pathway finding
+
+Saved molecules to BasidalinOnly_gen2_molecules.csv
+Job name: BasidalinOnly_gen2
+Job type: post-processing pretreat networks
+Job started on: 2026-03-10 10:43:47.291951
+Loading networks, it may take a while if loading large networks from file
+Loading network 1 from memory
+Number of reations in network 1: 549
+Networks loaded, now generating reaction strings
+Reaction strings generation finished
+Removing unconnected reactions
+Unconnected reactions removed
+Total number of reactions after pretreatment: 548
+Time used for network pretreatment: 0.00 minutes
+
+Job name: BasidalinOnly_gen2
+Job type: pathway search
+Job started on: 2026-03-10 10:43:47.322678
+Pathway finder started, total number of reactions in network 548
+Searching for pathways.
+If it is taking too long, try adjusting pruning parameters
+Pathway search finished, removing loops if there's any.
+Time used for pathway search: 0.00 minutes
+1 pathways found!
+2 reactions found in all pathways
+Min number of reactions in a pathway: 2
+Max number of reactions in a pathway: 2
+Pruning parameters for this search:
+search_depth: 3
+max_num_rxns: 3
+min_rxn_atom_economy: 0.3
+
+Job name: BasidalinOnly_gen2
+Job type: pathway ranking
+Job started on: 2026-03-10 10:43:47.398415
+Start ranking pathways. Number of pathways after sanitization: 1
+Reaction thermodynamics ranking working
+Reaction thermodynamics ranking finished
+Atom economy ranking working
+Min_eco 0.8846235133629219
+Max_eco 0.8846235133629219
+None_eco 0
+Atom_economy ranking finished
+Number of steps ranking working
+Number of steps ranking finished
+By product_number ranking working
+You can adjust multi-processing number to speed it up
+By product_number ranking finished
+min score 6.0
+max score 6.0
+
+Pathway ranking finished. Pathway scores:
+
+ranking 1
+final score 6.0
+Max reaction enthalpy score 0  x  2  =  0
+Number of reactions score 1.0  x  4  =  4.0
+By-product score 1.0  x  2  =  2.0
+Pathway atom economy score 0.0  x  1  =  0.0
+Salt score 0  x  0  =  0
+Reaxys score 0  x  0  =  0
+Cool score 0  x  0  =  0
+atom economy 0.8846235133629219
+pathway by-product 0
+intermediate by-product {None: 0}
+N.NC1=CC(=O)O/C1=C/C=O>>NC1=CC(=O)OC1(N)CC=O
+NC1=CC(=O)OC1(N)CC=O>>NC1(CC=O)OC2=NC1=C2.O
+rule0257_1
+rule0146_1
+No_Thermo
+No_Thermo
+
+Time used for pathway ranking: 0.00 minutes
+
+Job name: BasidalinOnly_gen2
+Job type: pathway visualization
+Job started on: 2026-03-10 10:43:47.522369
+pygraphviz is NOT installed.
+A custom node layout will be used for pathway visualization
+Number of pathways:  1
+Number of reactions in reaxys:  0
+Working on creating pages
+You can adjust multi-processing number to speed up PDF generation
+page done: 1
+Finished with pages, writing to pdf
+Time used for pathway visualization: 0.01 minutes
+
+A custom node layout was used for pathway visualization
+For a better layout, please install pygraphviz and Graphviz with the following command:
+conda install conda-forge::pygraphviz
+which should install both packages together
+
+
+Pathway files generated with prefix: BasidalinOnly_gen2
+Time: 209.82 s
