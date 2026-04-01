@@ -1,12 +1,12 @@
 input:
   SMILESfile: generated_molecules_diverseStarterSecondExtensionSMILES.csv
   smiles_column: Canonical_SMILES
-  start_index: 178
+  start_index: 237
   num_smiles: null
 output:
   directory: doranet_output
 parallel:
-  num_workers: 64
+  num_workers: 32
 network:
   generations: 3
   ruleset: JN3604IMT
