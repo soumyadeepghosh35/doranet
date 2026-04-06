@@ -1,0 +1,14 @@
+input:
+  reactionCSV: "reactionDF.csv"
+
+output:
+  fileNamePrefix: "basidalinPrecursor_gen2"
+
+scoring:
+  chunkSize: 5000
+  testMode: False      # set to true to process only test the code
+  testRows: 100
+
+filtering:
+  highFeasibilityRule: "rule1"
+  highFeasibilityLabel: 1
