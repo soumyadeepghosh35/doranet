@@ -1,0 +1,23 @@
+Config loaded from: doraxgb_config.yaml
+---------------------------------
+Step 1: File paths
+---------------------------------
+Working directory : /mnt/data.ese/nfs/users/sghosh6/DTRA_project/MACAW/doranet/scripts/Remdesivir_Pubchem/RemdesivirOnly_gen2
+Input CSV         : /mnt/data.ese/nfs/users/sghosh6/DTRA_project/MACAW/doranet/scripts/Remdesivir_Pubchem/RemdesivirOnly_gen2/doraxgb_inputFile.csv
+Output full CSV   : /mnt/data.ese/nfs/users/sghosh6/DTRA_project/MACAW/doranet/scripts/Remdesivir_Pubchem/RemdesivirOnly_gen2/RemdesivirOnly_gen2_reactionDF_DORAXGB.csv
+Output high CSV   : /mnt/data.ese/nfs/users/sghosh6/DTRA_project/MACAW/doranet/scripts/Remdesivir_Pubchem/RemdesivirOnly_gen2/RemdesivirOnly_gen2_reactionDF_DORAXGB_highFeasibility.csv
+---------------------------------
+Step 2: Load reactions
+---------------------------------
+Reactions loaded : 78117
+Columns          : ['reactants', 'products', 'reactionString', 'ruleName', 'thermo', 'reactantStoich', 'productStoich', 'reactionType', 'numReactantMolecules', 'numProductMolecules']
+---------------------------------
+Step 3: Load models
+---------------------------------
+Models loaded successfully
+---------------------------------
+Step 4: Run feasibility scoring
+---------------------------------
+Total reactions : 78117
+Chunk size      : 5000
+Total chunks    : 16

@@ -595,6 +595,7 @@ scripts/DrugBank/doranet_output/drugBank_DORAnetGeneratedMolecules.csv
 
 # DORAnet generated networks / outputs (often large)
 scripts/**/__forward_saved_network.pgnet
+scripts/**/*.csv
 scripts/**/*.pgnet
 
 # Large parquet datasets under natural_products_data
@@ -604,4 +605,7 @@ scripts/RetroTide_basidalinPrecursor/allReactants_gen3/doranet_output/basidalinP
 scripts/RetroTide_basidalinPrecursor/allReactants_gen2/basidalinPrecursor_gen2_reactionDF_DORAXGB.csv
 scripts/Favipiravir_Pubchem/FavipiravirOnly_gen3/FavipiravirOnly_gen3_pathways_visualized.pdf
 scripts/RetroTide_basidalinPrecursor/allReactants_gen2/basidalinPrecursor_gen2_reactionDF_DORAXGB_highFeasibility.csv
+scripts/Inosine_Pubchem/InosineSimilarstructures/InosineSimilarstructures_DORAnetGeneratedMolecules.csv
+scripts/Remdesivir_Pubchem/RemdesivirOnly_gen2/RemdesivirOnly_gen2_network_pretreated.json
+scripts/Remdesivir_Pubchem/RemdesivirOnly_gen2/RemdesivirOnly_gen2_reactionDF_DORAXGB.csv
 scripts/Favipiravir_Pubchem/FavipiravirOnly_gen3/FavipiravirOnly_gen3_reaxys_batch_result.csv
