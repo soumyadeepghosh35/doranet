@@ -14,7 +14,7 @@ input:
   smiles_column: "Canonical_SMILES"
   
   # Row index to start processing from (0 = first row)
-  start_index: 237
+  start_index: 353
   
   # Number of SMILES to process (null = process all)
   num_smiles: null

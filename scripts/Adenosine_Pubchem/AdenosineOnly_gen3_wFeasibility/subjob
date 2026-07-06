@@ -1,0 +1,1 @@
+python runDORAnet.py config.yaml > doranet.out

@@ -1,0 +1,79 @@
+# Config for runDORAnet.py -- run: python runDORAnet.py config.yaml
+
+doranetPath: "/users/sghosh6/DTRA_project/MACAW/doranet"
+jobName: "InosineOnly"
+
+starters:
+  - "C1=NC2=C(C(=O)N1)N=CN2[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O"
+
+
+
+maxAtoms:
+  C: 15
+  N: 6
+  O: 8
+  S: 3
+
+ruleset: "JN3604IMT"
+generations: 3
+
+# Reaction thermodynamics via eQuilibrator's standard Gibbs free energy (dG'),
+# the approach DORAnet's own team uses for enzymatic reactions specifically --
+# see runDORAnet.py's module docstring for the verification steps to run
+# BEFORE a real job (this needs a one-time ~1.3 GB download from Zenodo, and
+# I couldn't test the eQuilibrator integration end-to-end myself).
+computeThermodynamics: false
+
+# 0, not 15: DORAnet's own enzymatic example keeps a reaction only if it's
+# exergonic as written (dG' < this value). This is a different quantity and
+# a different appropriate cutoff than an enthalpy-based threshold.
+maxRxnThermoChange: 0
+
+# Path to the local eQuilibrator compound cache (built once via
+# generate_local_cache_from_default_zenodo -- see runDORAnet.py). If it
+# doesn't exist yet, runDORAnet.py will try to build it on first use, which
+# is slow and needs Zenodo access -- better to build it yourself ahead of
+# time, especially if compute nodes have restricted internet access.
+compoundsDbPath: "compounds.sqlite"
+
+# Pathway search. Left unset here so both default to `generations` above --
+# the network can't contain paths longer than that anyway, so searching deeper
+# just wastes time. Only set these explicitly if you deliberately want the
+# search shallower than the network (e.g. a deep exploratory network but you
+# only care about short routes).
+# searchDepth: 2
+# maxNumRxns: 2
+minRxnAtomEconomy: 0.0
+
+# Optional: override pathway_ranking's weights (null = DORAnet's defaults).
+# If you hit a crash from Byproduct_index (AtomValenceException / RuntimeError
+# during ranking -- a pre-existing gap in DORAnet's own error handling there,
+# unrelated to this script), set by_product_number to 0 to skip that scoring
+# step entirely:
+# weights:
+#   by_product_number: 0
+weights: null
+
+
+helpers:
+  - "O"
+  - "O=O"
+  - "[H][H]"
+  - "O=C=O"
+  - "C=O"
+  - "[C-]#[O+]"
+  - "Br"
+  - "[Br][Br]"
+  - "CO"
+  - "C=C"
+  - "O=S(O)O"
+  - "N"
+  - "O=S(=O)(O)O"
+  - "O=NO"
+  - "N#N"
+  - "O=[N+]([O-])O"
+  - "NO"
+  - "C#N"
+  - "S"
+  - "O=S=O"
+  - "N#CO"

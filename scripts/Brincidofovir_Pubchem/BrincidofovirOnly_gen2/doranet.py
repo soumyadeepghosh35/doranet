@@ -76,7 +76,7 @@ print(f"\nSaved molecules to {output_path}")
 if all_targets:
     post_processing.one_step(
         networks={forward_network},
-        total_generations=3,
+        total_generations=2,
         starters=user_starters,
         helpers=user_helpers,
         target=all_targets,  # Use generated molecules as targets
