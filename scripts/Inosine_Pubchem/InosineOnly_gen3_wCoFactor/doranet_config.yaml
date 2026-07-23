@@ -1,0 +1,54 @@
+# DORAnet enzymatic expansion configuration.
+
+doranetPath: "/users/sghosh6/DTRA_project/MACAW/doranet"
+
+job:
+  name: "InosineOnly_gen3"
+  generations: 1
+  direction: "forward"
+  ruleset: "JN3604IMT"      # "JN3604IMT" or "JN1224MIN"
+  maxAtoms:
+    C: 15
+    N: 6
+    O: 8
+    S: 3
+
+# Inosine starter. Cofactors are NOT listed here; they come from the file below.
+starters:
+  - "C1=NC2=C(C(=O)N1)N=CN2[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O"
+
+# Helpers are used only during post-processing pathway search.
+helpers:
+  - "O"
+  - "O=O"
+  - "[H][H]"
+  - "O=C=O"
+  - "C=O"
+  - "[C-]#[O+]"
+  - "Br"
+  - "[Br][Br]"
+  - "CO"
+  - "C=C"
+  - "O=S(O)O"
+  - "N"
+  - "O=S(=O)(O)O"
+  - "O=NO"
+  - "N#N"
+  - "O=[N+]([O-])O"
+  - "NO"
+  - "C#N"
+  - "S"
+  - "O=S=O"
+  - "N#CO"
+
+cofactors:
+  # Path to the custom cofactor table (#ID, Name, SMILES). Resolved relative
+  # to this config file when not absolute. Only cofactors listed in this file
+  # are available; every shipped cofactor omitted from it is excluded, and any
+  # rule that would need an excluded cofactor is dropped.
+  file: "/mnt/data.ese/nfs/users/sghosh6/DTRA_project/MACAW/doranet/scripts/custom_cofactors.tsv"
+
+  # Optional. Cofactor ids present in the file that should still be excluded.
+  # Stock DORAnet excludes CARBONYL_CoF and AMINO_CoF; list them here if your
+  # file includes them and you want to preserve that behavior.
+  excludedCofactors: []
