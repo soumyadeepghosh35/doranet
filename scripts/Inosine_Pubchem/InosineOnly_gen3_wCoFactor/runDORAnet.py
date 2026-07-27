@@ -9,9 +9,11 @@ cofactor TSV (same #ID / Name / SMILES schema) whose path is given in
 config.yaml, then rebuilds those tables so expansion uses only the cofactors
 defined in that file.
 
-Any shipped cofactor absent from the custom file is excluded automatically,
-which drops every rule that would reference it and keeps the filters from
-looking up a missing token.
+The '#ID' column must contain DORAnet cofactor tokens (for example NAD_CoF,
+PYROPHOSPHATE_DONOR_CoF, WATER), not BiGG metabolite ids, because the rules
+reference cofactors by these tokens. Any shipped cofactor absent from the
+custom file is excluded automatically, which drops every rule that would
+reference it and keeps the filters from looking up a missing token.
 
 Usage:
     python runDORAnet.py config.yaml
@@ -45,10 +47,12 @@ def canonicalSmiles(smiles):
     return Chem.MolToSmiles(mol)
 
 
-def loadCofactorsIntoModule(enzModule, cofactorFile, extraExcluded):
+def loadCofactorsIntoModule(enzGlobals, cofactorFile, extraExcluded):
     """Rebuild the enzymatic module's cofactor tables from a custom TSV.
 
-    enzModule : the doranet.modules.enzymatic.generate_network module.
+    enzGlobals : the module namespace of doranet's enzymatic generate_network,
+        obtained as enzymatic.generate_network.__globals__. Reaching the module
+        this way is robust to how the package exposes the submodule.
     cofactorFile : path to a TSV with columns '#ID', 'Name', 'SMILES'.
     extraExcluded : cofactor ids present in the file that should still be
         excluded (e.g. CARBONYL_CoF / AMINO_CoF, which stock DORAnet excludes).
@@ -56,26 +60,32 @@ def loadCofactorsIntoModule(enzModule, cofactorFile, extraExcluded):
     The '#ID' must match a cofactor token used by the rule set for that
     cofactor to occupy a reaction slot.
     """
-    shippedIds = set(enzModule.cofactors_dict.keys())
+    required = ("cofactors_dict", "cofactors_clean", "cofactors_clean_dict",
+                "excluded_cofactors", "clean_SMILES")
+    missing = [name for name in required if name not in enzGlobals]
+    if missing:
+        raise RuntimeError(
+            "The enzymatic module does not expose these expected names: "
+            f"{missing}. The fork may have renamed them; adjust accordingly."
+        )
+
+    cleanFn = enzGlobals["clean_SMILES"]
+    shippedIds = set(enzGlobals["cofactors_dict"].keys())
 
     table = pd.read_csv(cofactorFile, sep="\t")
     if not {"#ID", "SMILES"}.issubset(table.columns):
-        raise ValueError(
-            f"{cofactorFile} must have '#ID' and 'SMILES' columns"
-        )
+        raise ValueError(f"{cofactorFile} must have '#ID' and 'SMILES' columns")
 
     customDict = {}
     customSet = set()
+    unknownTokens = []
     for cofId, smiles in zip(table["#ID"], table["SMILES"]):
         canon = canonicalSmiles(smiles)
         if canon is None:
             print(f"WARNING invalid SMILES for cofactor '{cofId}', skipping")
             continue
         if cofId not in shippedIds:
-            print(
-                f"WARNING cofactor id '{cofId}' is not a token used by any "
-                f"shipped rule, so it will never occupy a cofactor slot"
-            )
+            unknownTokens.append(cofId)
         customDict[cofId] = canon
         customSet.add(canon)
 
@@ -86,21 +96,34 @@ def loadCofactorsIntoModule(enzModule, cofactorFile, extraExcluded):
     cleanSet = set()
     for cofId, smiles in zip(table["#ID"], table["SMILES"]):
         if cofId in customDict and cofId not in excluded:
-            cleaned = enzModule.clean_SMILES(smiles)
+            cleaned = cleanFn(smiles)
             cleanDict[cofId] = cleaned
             cleanSet.add(cleaned)
 
-    enzModule.cofactors_path = Path(cofactorFile)
-    enzModule.cofactors_dict = customDict
-    enzModule.cofactors_set = customSet
-    enzModule.excluded_cofactors = tuple(excluded)
-    enzModule.cofactors_clean_dict = cleanDict
-    enzModule.cofactors_clean = cleanSet
+    enzGlobals["cofactors_path"] = Path(cofactorFile)
+    enzGlobals["cofactors_dict"] = customDict
+    enzGlobals["cofactors_set"] = customSet
+    enzGlobals["excluded_cofactors"] = tuple(excluded)
+    enzGlobals["cofactors_clean_dict"] = cleanDict
+    enzGlobals["cofactors_clean"] = cleanSet
 
     activeTokens = customIds - set(excluded)
     print(f"Cofactor file: {cofactorFile}")
     print(f"Cofactor pool in use ({len(activeTokens)} tokens): "
           f"{sorted(activeTokens)}")
+
+    if unknownTokens:
+        print(f"WARNING {len(unknownTokens)} id(s) in the file are not DORAnet "
+              f"cofactor tokens and will never occupy a slot, e.g. "
+              f"{unknownTokens[:8]}")
+    if not activeTokens:
+        raise RuntimeError(
+            "No cofactor in the file matches a DORAnet rule token, so the "
+            "cofactor pool is empty and every cofactor-dependent rule would be "
+            "dropped. The '#ID' column must use DORAnet tokens (NAD_CoF, "
+            "PYROPHOSPHATE_DONOR_CoF, WATER, ...), not BiGG metabolite ids. "
+            "Generate the file with the token mapping before running."
+        )
 
 
 def writeMoleculeCsv(smilesList, userStarters, outputPath):
@@ -130,7 +153,6 @@ def main():
     sys.path.insert(0, str(resolvePath(config["doranetPath"], baseDir)))
 
     import doranet.modules.enzymatic as enzymatic
-    import doranet.modules.enzymatic.generate_network as enzGenMod
     import doranet.modules.post_processing as post_processing
 
     startTime = time.time()
@@ -143,7 +165,7 @@ def main():
     cofConfig = config["cofactors"]
     cofactorFile = resolvePath(cofConfig["file"], baseDir)
     loadCofactorsIntoModule(
-        enzGenMod,
+        enzymatic.generate_network.__globals__,
         cofactorFile,
         cofConfig.get("excludedCofactors", []),
     )
